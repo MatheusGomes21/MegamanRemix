@@ -914,3 +914,15 @@ AssetImportParameters requested are different than current active one (requested
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
   custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 517.123823 seconds.
+  path: Assets/Deserto/Pedrinhas.png
+  artifactKey: Guid(50c67faaa24398c41b70b534ef5e2c5f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Deserto/Pedrinhas.png using Guid(50c67faaa24398c41b70b534ef5e2c5f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '192429d14bc50fa5e15f0853402d997c') in 0.068209 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 563.503992 seconds.
+  path: Assets/Deserto/Casa.png
+  artifactKey: Guid(b59b201e61510cf43921054abf162e7a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Deserto/Casa.png using Guid(b59b201e61510cf43921054abf162e7a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a1d0cf70a978ee4b96109e3bf5f7c831') in 0.031600 seconds 
