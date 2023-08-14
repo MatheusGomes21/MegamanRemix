@@ -926,3 +926,15 @@ Received Import Request.
   path: Assets/Deserto/Casa.png
   artifactKey: Guid(b59b201e61510cf43921054abf162e7a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
 Start importing Assets/Deserto/Casa.png using Guid(b59b201e61510cf43921054abf162e7a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a1d0cf70a978ee4b96109e3bf5f7c831') in 0.031600 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 632.815539 seconds.
+  path: Assets/Deserto/Bar.png
+  artifactKey: Guid(f963fe112c1ca3342a3cd27c230b4448) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Deserto/Bar.png using Guid(f963fe112c1ca3342a3cd27c230b4448) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '46c5d28cd00ef936ca68d97cdc4ed69c') in 0.036830 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 23.192842 seconds.
+  path: Assets/Deserto/Igreja.png
+  artifactKey: Guid(99eab300de4a3284b85a5163a91030d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Deserto/Igreja.png using Guid(99eab300de4a3284b85a5163a91030d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '83ca1ca2dffad9143b89dee93ddd4f59') in 0.018284 seconds 
