@@ -386,6 +386,7 @@ GameObject:
   - component: {fileID: 84599045}
   - component: {fileID: 84599044}
   - component: {fileID: 84599043}
+  - component: {fileID: 84599046}
   m_Layer: 0
   m_Name: Pipe3 (3)
   m_TagString: Untagged
@@ -486,6 +487,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 20
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &84599046
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 84599042}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f6d2c2e82733bdf47a6340c3814cacbf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &89868002
 GameObject:
   m_ObjectHideFlags: 0
@@ -581,6 +594,7 @@ GameObject:
   - component: {fileID: 91489211}
   - component: {fileID: 91489210}
   - component: {fileID: 91489209}
+  - component: {fileID: 91489212}
   m_Layer: 0
   m_Name: Pipe3
   m_TagString: Untagged
@@ -681,6 +695,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &91489212
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 91489208}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f6d2c2e82733bdf47a6340c3814cacbf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &95310132
 GameObject:
   m_ObjectHideFlags: 0
@@ -848,6 +874,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Enabled
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 198825090059282404, guid: c45b7be3af53a5545a80450e64fc63e6,
+        type: 3}
+      propertyPath: SubModule.enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 198825090059282404, guid: c45b7be3af53a5545a80450e64fc63e6,
+        type: 3}
+      propertyPath: TriggerModule.enabled
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 199492634134104890, guid: c45b7be3af53a5545a80450e64fc63e6,
         type: 3}
@@ -1221,6 +1257,7 @@ GameObject:
   - component: {fileID: 291436349}
   - component: {fileID: 291436348}
   - component: {fileID: 291436347}
+  - component: {fileID: 291436350}
   m_Layer: 0
   m_Name: Pipe3 (1)
   m_TagString: Untagged
@@ -1321,6 +1358,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 18
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &291436350
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 291436346}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f6d2c2e82733bdf47a6340c3814cacbf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &323482330
 GameObject:
   m_ObjectHideFlags: 0
@@ -1416,6 +1465,7 @@ GameObject:
   - component: {fileID: 402593216}
   - component: {fileID: 402593215}
   - component: {fileID: 402593214}
+  - component: {fileID: 402593217}
   m_Layer: 0
   m_Name: Pipe3 (8)
   m_TagString: Untagged
@@ -1516,6 +1566,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 29
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &402593217
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 402593213}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f6d2c2e82733bdf47a6340c3814cacbf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &426823942
 GameObject:
   m_ObjectHideFlags: 0
@@ -5596,6 +5658,7 @@ GameObject:
   - component: {fileID: 866120516}
   - component: {fileID: 866120515}
   - component: {fileID: 866120514}
+  - component: {fileID: 866120517}
   m_Layer: 0
   m_Name: Pipe3 (7)
   m_TagString: Untagged
@@ -5696,6 +5759,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 28
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &866120517
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 866120513}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f6d2c2e82733bdf47a6340c3814cacbf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &911354596
 GameObject:
   m_ObjectHideFlags: 0
@@ -5707,6 +5782,7 @@ GameObject:
   - component: {fileID: 911354599}
   - component: {fileID: 911354598}
   - component: {fileID: 911354597}
+  - component: {fileID: 911354600}
   m_Layer: 0
   m_Name: Pipe3 (5)
   m_TagString: Untagged
@@ -5807,6 +5883,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 22
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &911354600
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 911354596}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f6d2c2e82733bdf47a6340c3814cacbf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &914157083
 GameObject:
   m_ObjectHideFlags: 0
@@ -5818,6 +5906,7 @@ GameObject:
   - component: {fileID: 914157086}
   - component: {fileID: 914157085}
   - component: {fileID: 914157084}
+  - component: {fileID: 914157087}
   m_Layer: 0
   m_Name: Pipe3 (2)
   m_TagString: Untagged
@@ -5918,6 +6007,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 19
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &914157087
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 914157083}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f6d2c2e82733bdf47a6340c3814cacbf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &919704395
 GameObject:
   m_ObjectHideFlags: 0
@@ -20962,6 +21063,7 @@ GameObject:
   - component: {fileID: 1513738484}
   - component: {fileID: 1513738483}
   - component: {fileID: 1513738482}
+  - component: {fileID: 1513738485}
   m_Layer: 0
   m_Name: Pipe3 (4)
   m_TagString: Untagged
@@ -21062,6 +21164,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 21
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1513738485
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1513738481}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f6d2c2e82733bdf47a6340c3814cacbf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1564657959
 GameObject:
   m_ObjectHideFlags: 0
@@ -21241,6 +21355,7 @@ GameObject:
   - component: {fileID: 1593913214}
   - component: {fileID: 1593913213}
   - component: {fileID: 1593913212}
+  - component: {fileID: 1593913215}
   m_Layer: 0
   m_Name: Pipe3 (9)
   m_TagString: Untagged
@@ -21341,6 +21456,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 43
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1593913215
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1593913211}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f6d2c2e82733bdf47a6340c3814cacbf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1747098877
 GameObject:
   m_ObjectHideFlags: 0
@@ -21893,42 +22020,6 @@ PolygonCollider2D:
       - {x: 0.089999996, y: -0.04}
       - {x: 0.21, y: -0.02}
       - {x: 0.21, y: 0.02}
---- !u!1 &2010686031 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1564723697188490, guid: c45b7be3af53a5545a80450e64fc63e6,
-    type: 3}
-  m_PrefabInstance: {fileID: 125523048}
-  m_PrefabAsset: {fileID: 0}
---- !u!60 &2010686035
-PolygonCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2010686031}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 0}
-    oldSize: {x: 0, y: 0}
-    newSize: {x: 0, y: 0}
-    adaptiveTilingThreshold: 0
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  m_Points:
-    m_Paths:
-    - - {x: 0, y: 0.0000100000025}
-      - {x: -0.000009510568, y: 0.0000030901706}
-      - {x: -0.0000058778533, y: -0.000008090173}
-      - {x: 0.000005877855, y: -0.000008090172}
-      - {x: 0.000009510567, y: 0.000003090172}
 --- !u!1 &2020732565
 GameObject:
   m_ObjectHideFlags: 0
@@ -22276,6 +22367,7 @@ GameObject:
   - component: {fileID: 2136706437}
   - component: {fileID: 2136706436}
   - component: {fileID: 2136706435}
+  - component: {fileID: 2136706438}
   m_Layer: 0
   m_Name: Pipe3 (6)
   m_TagString: Untagged
@@ -22376,3 +22468,15 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 27
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2136706438
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2136706434}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f6d2c2e82733bdf47a6340c3814cacbf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
