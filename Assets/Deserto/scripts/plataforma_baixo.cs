@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class plataforma : MonoBehaviour
+public class plataforma_baixo : MonoBehaviour
 {
 
     // Start is called before the first frame update
@@ -13,7 +13,7 @@ public class plataforma : MonoBehaviour
     }
 
     float movement;
-    float speed = 0.002f;
+    float speed = -0.002f;
 
     // Update is called once per frame
     void Update()
