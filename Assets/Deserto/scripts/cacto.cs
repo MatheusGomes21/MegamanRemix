@@ -29,17 +29,16 @@ public class cacto : MonoBehaviour
         }
     }
 
-    void OnTriggerEnter2D(Collider2D collider)
+    void OnCollisionEnter2D(Collision2D collider)
     {
         if (collider.gameObject.tag == "Player")
         {
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         }
+    }
 
-        if(collider.gameObject.tag == "Bullet")
-        {
-            Destroy(gameObject);
-            MonoBehaviour.print("aaaaaaaaaaa");
-        }
+    void OnParticleCollision(GameObject other)
+    {
+        Destroy(gameObject);
     }
 }
