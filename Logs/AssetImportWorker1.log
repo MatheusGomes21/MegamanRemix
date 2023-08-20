@@ -15,7 +15,7 @@ D:/Projetos/Unity/MegamanRemix
 -logFile
 Logs/AssetImportWorker1.log
 -srvPort
-54827
+51592
 Successfully changed project path to: D:/Projetos/Unity/MegamanRemix
 D:/Projetos/Unity/MegamanRemix
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
@@ -47,11 +47,11 @@ D:/Projetos/Unity/MegamanRemix
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [49736] Host "[IP] 192.168.0.162 [Port] 0 [Flags] 2 [Guid] 2965683127 [EditorId] 2965683127 [Version] 1048832 [Id] WindowsEditor(7,Badskyfox) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+Player connection [24584] Host "[IP] 192.168.0.162 [Port] 0 [Flags] 2 [Guid] 169480588 [EditorId] 169480588 [Version] 1048832 [Id] WindowsEditor(7,Badskyfox) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
 
-Player connection [49736] Host "[IP] 192.168.0.162 [Port] 0 [Flags] 2 [Guid] 2965683127 [EditorId] 2965683127 [Version] 1048832 [Id] WindowsEditor(7,Badskyfox) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [24584] Host "[IP] 192.168.0.162 [Port] 0 [Flags] 2 [Guid] 169480588 [EditorId] 169480588 [Version] 1048832 [Id] WindowsEditor(7,Badskyfox) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
 
-Refreshing native plugins compatible for Editor in 43.49 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 41.21 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2021.3.16f1 (4016570cf34f)
 [Subsystems] Discovering subsystems at path D:/2021.3.16f1/Editor/Data/Resources/UnitySubsystems
@@ -67,91 +67,91 @@ Initialize mono
 Mono path[0] = 'D:/2021.3.16f1/Editor/Data/Managed'
 Mono path[1] = 'D:/2021.3.16f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'D:/2021.3.16f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56936
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56744
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: D:/2021.3.16f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
 Register platform support module: D:/2021.3.16f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.002325 seconds.
+Registered in 0.001740 seconds.
 Native extension for WindowsStandalone target not found
 Native extension for Android target not found
-Refreshing native plugins compatible for Editor in 49.52 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 36.84 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.734 seconds
+- Completed reload, in  0.498 seconds
 Domain Reload Profiling:
-	ReloadAssembly (735ms)
-		BeginReloadAssembly (69ms)
+	ReloadAssembly (499ms)
+		BeginReloadAssembly (58ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (1ms)
-		EndReloadAssembly (560ms)
-			LoadAssemblies (70ms)
+		EndReloadAssembly (357ms)
+			LoadAssemblies (58ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (139ms)
+			SetupTypeCache (90ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (35ms)
-			SetupLoadedEditorAssemblies (329ms)
+			RebuildScriptCaches (22ms)
+			SetupLoadedEditorAssemblies (207ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (71ms)
+				InitializePlatformSupportModulesInManaged (47ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (50ms)
+				RefreshPlugins (37ms)
 				BeforeProcessingInitializeOnLoad (2ms)
-				ProcessInitializeOnLoadAttributes (147ms)
-				ProcessInitializeOnLoadMethodAttributes (59ms)
+				ProcessInitializeOnLoadAttributes (87ms)
+				ProcessInitializeOnLoadMethodAttributes (33ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.010206 seconds.
+Registered in 0.006531 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
 Native extension for Android target not found
-Refreshing native plugins compatible for Editor in 0.94 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 0.75 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Package Manager log level set to [2]
 Mono: successfully reloaded assembly
-- Completed reload, in  1.219 seconds
+- Completed reload, in  0.863 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1220ms)
-		BeginReloadAssembly (237ms)
+	ReloadAssembly (864ms)
+		BeginReloadAssembly (192ms)
 			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (5ms)
+			DisableScriptedObjects (4ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (140ms)
-		EndReloadAssembly (870ms)
-			LoadAssemblies (100ms)
+			CreateAndSetChildDomain (119ms)
+		EndReloadAssembly (579ms)
+			LoadAssemblies (63ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (240ms)
+			SetupTypeCache (154ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (57ms)
-			SetupLoadedEditorAssemblies (442ms)
+			RebuildScriptCaches (35ms)
+			SetupLoadedEditorAssemblies (303ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (13ms)
+				InitializePlatformSupportModulesInManaged (10ms)
 				SetLoadedEditorAssemblies (0ms)
 				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (56ms)
-				ProcessInitializeOnLoadAttributes (242ms)
-				ProcessInitializeOnLoadMethodAttributes (127ms)
+				BeforeProcessingInitializeOnLoad (43ms)
+				ProcessInitializeOnLoadAttributes (157ms)
+				ProcessInitializeOnLoadMethodAttributes (89ms)
 				AfterProcessingInitializeOnLoad (2ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (8ms)
+			AwakeInstancesAfterBackupRestoration (5ms)
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.06 seconds
-Refreshing native plugins compatible for Editor in 0.92 ms, found 4 plugins.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.10 seconds
+Refreshing native plugins compatible for Editor in 0.88 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 2330 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 77 unused Assets / (60.8 KB). Loaded Objects now: 2790.
-Memory consumption went from 87.2 MB to 87.1 MB.
-Total: 6.265100 ms (FindLiveObjects: 0.235100 ms CreateObjectMapping: 0.073700 ms MarkObjects: 5.799400 ms  DeleteObjects: 0.154500 ms)
+Unloading 77 unused Assets / (60.8 KB). Loaded Objects now: 2789.
+Memory consumption went from 87.1 MB to 87.1 MB.
+Total: 7.102000 ms (FindLiveObjects: 0.399400 ms CreateObjectMapping: 0.121500 ms MarkObjects: 6.440300 ms  DeleteObjects: 0.137800 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
@@ -165,58 +165,58 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 698304.334540 seconds.
+  Time since last request: 757964.869698 seconds.
+  path: Assets/ForwardRenderer.asset
+  artifactKey: Guid(d0373411a7496634db3a2b14a2f097b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ForwardRenderer.asset using Guid(d0373411a7496634db3a2b14a2f097b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2bf11da17d910febde1b4ce08a5679ad') in 0.037156 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
   path: Assets/LightweightRenderPipelineAsset.asset
   artifactKey: Guid(1f2593a23deb33d45995c0f33e1e0914) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/LightweightRenderPipelineAsset.asset using Guid(1f2593a23deb33d45995c0f33e1e0914) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1b47b7f189ef83b3d9e4888ca13c6075') in 0.045046 seconds 
+Start importing Assets/LightweightRenderPipelineAsset.asset using Guid(1f2593a23deb33d45995c0f33e1e0914) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1b47b7f189ef83b3d9e4888ca13c6075') in 0.003482 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 410.872808 seconds.
-  path: Assets/fonts/Commodore Rounded v1.2.ttf
-  artifactKey: Guid(59b2fd5458d56e04da975fc175a25b70) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/fonts/Commodore Rounded v1.2.ttf using Guid(59b2fd5458d56e04da975fc175a25b70) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '468cfa4784abaea988299a0bff2664ba') in 0.313873 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.312908 seconds.
+  Time since last request: 639.535767 seconds.
   path: Assets/Deserto/Areia.png
   artifactKey: Guid(057f2283f511af244b12f5a6ad09383a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Deserto/Areia.png using Guid(057f2283f511af244b12f5a6ad09383a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd4cdaa2c3e8be42c59627a3baf2624ea') in 0.024557 seconds 
+Start importing Assets/Deserto/Areia.png using Guid(057f2283f511af244b12f5a6ad09383a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd4cdaa2c3e8be42c59627a3baf2624ea') in 0.088059 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.734808 seconds.
-  path: Assets/Deserto/Casa.png
-  artifactKey: Guid(b59b201e61510cf43921054abf162e7a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Deserto/Casa.png using Guid(b59b201e61510cf43921054abf162e7a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cbe048ecc2761ebd096698d2e9b5dbf6') in 0.028854 seconds 
+  Time since last request: 0.527731 seconds.
+  path: Assets/Deserto/Bar.png
+  artifactKey: Guid(f963fe112c1ca3342a3cd27c230b4448) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Deserto/Bar.png using Guid(f963fe112c1ca3342a3cd27c230b4448) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '622f277c2534ad877c93f67ede2beec7') in 0.026774 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.537900 seconds.
-  path: Assets/Deserto/Igreja.png
-  artifactKey: Guid(99eab300de4a3284b85a5163a91030d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Deserto/Igreja.png using Guid(99eab300de4a3284b85a5163a91030d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '85f13565a51be0d286dc58ba4831e458') in 0.012589 seconds 
+  Time since last request: 0.640155 seconds.
+  path: Assets/Deserto/Lugar.jpg
+  artifactKey: Guid(16fdc5268a0e29f42826a1acc5d5a6be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Deserto/Lugar.jpg using Guid(16fdc5268a0e29f42826a1acc5d5a6be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '97636b6574bbabc35390ffde82e7f231') in 0.076540 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.707642 seconds.
-  path: Assets/Deserto/Estrela.png
-  artifactKey: Guid(1fe02d50945bad3468f2b1c8efd16ca3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Deserto/Estrela.png using Guid(1fe02d50945bad3468f2b1c8efd16ca3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '74be6dbdabcba888dad184b6f078a93f') in 0.031866 seconds 
+  Time since last request: 0.568842 seconds.
+  path: Assets/Deserto/Nave.png
+  artifactKey: Guid(5c71506ea60990d43a83b6f7e70a86bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Deserto/Nave.png using Guid(5c71506ea60990d43a83b6f7e70a86bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c1242b568ef571e76b05e6f6c5df65c3') in 0.013278 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000034 seconds.
-  path: Assets/Deserto/Pedrinhas.png
-  artifactKey: Guid(50c67faaa24398c41b70b534ef5e2c5f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Deserto/Pedrinhas.png using Guid(50c67faaa24398c41b70b534ef5e2c5f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '49481bcd5b42bad5b8cdaa7a669a331e') in 0.013579 seconds 
+  Time since last request: 0.000032 seconds.
+  path: Assets/Deserto/Pedrona.png
+  artifactKey: Guid(7de508331f21cea4cb41e6acae39f292) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Deserto/Pedrona.png using Guid(7de508331f21cea4cb41e6acae39f292) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '331964394e881637281ed2f37f6fd452') in 0.053007 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000026 seconds.
+  Time since last request: 0.000041 seconds.
   path: Assets/Deserto/Nova Pedrinha.png
   artifactKey: Guid(e49a65c9aafdd7a48a7900321b0f5a8e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Deserto/Nova Pedrinha.png using Guid(e49a65c9aafdd7a48a7900321b0f5a8e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3ec4f5146abeda20db220e0fa1f740d8') in 0.012652 seconds 
+Start importing Assets/Deserto/Nova Pedrinha.png using Guid(e49a65c9aafdd7a48a7900321b0f5a8e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3ec4f5146abeda20db220e0fa1f740d8') in 0.068128 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000065 seconds.
-  path: Assets/Deserto/Cobra.jpg
-  artifactKey: Guid(7aa22873085d8584d8519c06d396748d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Deserto/Cobra.jpg using Guid(7aa22873085d8584d8519c06d396748d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4469e976e6537f78eb145b2a365ee841') in 0.053388 seconds 
+  Time since last request: 0.000049 seconds.
+  path: Assets/Deserto/Nuvem.png
+  artifactKey: Guid(22b5abbe33cec494aac1213107916102) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Deserto/Nuvem.png using Guid(22b5abbe33cec494aac1213107916102) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0abc10a070440c923d4dc415bb583ec1') in 0.037812 seconds 
 Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
 AssetImportWorker is now disconnected from the server
 Process exiting
