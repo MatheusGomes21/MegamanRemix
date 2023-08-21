@@ -38,6 +38,15 @@ public class Pulo : MonoBehaviour
         {
             animator.SetBool("Caindo", false);
         }
+        if (Input.GetAxis("Jump") != 0)
+        {
+            animator.SetBool("Pulosla", true);
+        }
+
+        else
+        {
+            animator.SetBool("Pulosla", false);
+        }
     }
 
     void OnCollisionEnter2D(Collision2D collision)
