@@ -29,6 +29,15 @@ public class Pulo : MonoBehaviour
         {
             animator.SetBool("Jump", false);
         }
+        if (Input.GetAxis("Cair") != 0)
+        {
+            animator.SetBool("Caindo", true);
+        }
+
+        else
+        {
+            animator.SetBool("Caindo", false);
+        }
     }
 
     void OnCollisionEnter2D(Collision2D collision)
