@@ -47,7 +47,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 64
+  spritePixelsToUnits: 32
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -820,7 +820,7 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Cowbow Animation_6: 468436758
+      Cowbow Animation_4: 1337348846
       Cowbow Animation_8: 1566558446
       Cowbow Animation_20: -227814652
       Cowbow Animation_5: 1135880262
@@ -851,8 +851,8 @@ TextureImporter:
       Cowbow Animation_21: 1561131939
       Cowbow Animation_30: 1661537306
       Cowbow Animation_10: 1060985073
+      Cowbow Animation_6: 468436758
       Cowbow Animation_17: -1294556108
-      Cowbow Animation_4: 1337348846
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
