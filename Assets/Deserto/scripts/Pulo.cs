@@ -8,6 +8,8 @@ public class Pulo : MonoBehaviour
     private Rigidbody2D rb;
     public Animator animator;
 
+    bool jumping;
+
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -16,19 +18,21 @@ public class Pulo : MonoBehaviour
 
     void Update()
     {
-
-        if (Input.GetAxis("Jump") != 0)
+        if (Input.GetKeyDown(KeyCode.Space) && jumping == false)
         {
+            rb.velocity = new Vector2(rb.velocity.x, jumpForce);
             animator.SetBool("Jump", true);
+            jumping = true;
         }
 
         else
         {
             animator.SetBool("Jump", false);
         }
-        if (Input.GetKeyDown(KeyCode.Space))
-        {
-            rb.velocity = new Vector2(rb.velocity.x, jumpForce);
-        }
+    }
+
+    void OnCollisionEnter2D(Collision2D collision)
+    {
+        jumping = false;
     }
 }
