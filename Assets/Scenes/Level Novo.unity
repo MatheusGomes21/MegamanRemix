@@ -210,6 +210,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 95530863979618488, guid: d42a24c9cbd336e46aa519ab65fd03d8,
         type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 95530863979618488, guid: d42a24c9cbd336e46aa519ab65fd03d8,
+        type: 3}
       propertyPath: m_Controller
       value: 
       objectReference: {fileID: 9100000, guid: 7ef70a6f71e6194408b3ba8967e42308, type: 2}
@@ -30703,11 +30708,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ca8ec064e9280984d98bbc4b95a006ca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Speed: 0
-  JumpForce: 0
-  isJumping: 0
-  doubleJump: 0
-  rig: {fileID: 0}
 --- !u!114 &1351415222
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -33,7 +33,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -820,7 +820,7 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Cowbow Animation_17: -1294556108
+      Cowbow Animation_6: 468436758
       Cowbow Animation_8: 1566558446
       Cowbow Animation_20: -227814652
       Cowbow Animation_5: 1135880262
@@ -851,8 +851,8 @@ TextureImporter:
       Cowbow Animation_21: 1561131939
       Cowbow Animation_30: 1661537306
       Cowbow Animation_10: 1060985073
+      Cowbow Animation_17: -1294556108
       Cowbow Animation_4: 1337348846
-      Cowbow Animation_6: 468436758
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
