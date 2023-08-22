@@ -25,7 +25,7 @@ public class Pulo : MonoBehaviour
             jumping = true;
         }
 
-        else
+         void OnJumpAnimationFinished()
         {
            animator.SetBool("Jump", false);
         }
@@ -35,5 +35,6 @@ public class Pulo : MonoBehaviour
     void OnCollisionEnter2D(Collision2D collision)
     {
         jumping = false;
+        animator.SetBool("Jump", false);
     }
 }
