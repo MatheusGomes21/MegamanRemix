@@ -27,16 +27,7 @@ public class Pulo : MonoBehaviour
 
         else
         {
-            animator.SetBool("Jump", false);
-        }
-        if (Input.GetAxis("Jump") != 0)
-        {
-            animator.SetBool("Queda", true);
-        }
-
-        else
-        {
-            animator.SetBool("Queda", false);
+           animator.SetBool("Jump", false);
         }
 
     }
