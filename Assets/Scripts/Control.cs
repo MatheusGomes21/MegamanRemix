@@ -10,12 +10,31 @@ public class Control : MonoBehaviour
     bool jump,doublejump;
     float jumptime, jumptimeside;
     public ParticleSystem fire;
+    public Animator animator;
     void Start()
     {
-
+        animator = GetComponent<Animator>();
     }
     void Update()
     {
+        if (Input.GetAxis("Horizontal") != 0)
+        {
+            animator.SetBool("Correndo", true);
+        }
+
+        else
+        {
+            animator.SetBool("Correndo", false);
+        }
+        if (Input.GetAxis("Fire1") != 0)
+        {
+            animator.SetBool("Atirando", true);
+        }
+
+        else
+        {
+            animator.SetBool("Atirando", false);
+        }
         xmov = Input.GetAxis("Horizontal");
         if (Input.GetButtonDown("Jump"))
         {
@@ -24,7 +43,6 @@ public class Control : MonoBehaviour
                 doublejump = true;
             }
         }
-
         if (Input.GetButton("Jump"))
         {
             jump = true;
@@ -36,6 +54,8 @@ public class Control : MonoBehaviour
             jumptime = 0;
             jumptimeside = 0;
         }
+
+       
         anima.SetBool("Fire", false);
 
         if (Input.GetButtonDown("Fire1"))
@@ -43,7 +63,6 @@ public class Control : MonoBehaviour
             fire.Emit(1);
             anima.SetBool("Fire", true);
         }
-
     }
    
     void FixedUpdate()
