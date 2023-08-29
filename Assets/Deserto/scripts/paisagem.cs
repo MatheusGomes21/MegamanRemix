@@ -7,6 +7,7 @@ public class paisagem : MonoBehaviour
     public float offset;
     public float speed;
     public float layer;
+    public float selfY;
     GameObject player;
 
     // Start is called before the first frame update
@@ -19,9 +20,11 @@ public class paisagem : MonoBehaviour
     void Update()
     {
         float playerX = player.transform.position.x;
+        float playerY = player.transform.position.y;
         float selfX = (playerX * -speed) - 3 + offset;
+        //float selfY = (playerY * speed * 5) + 1.3f;
 
-        if((selfX - playerX) < -11.525f)
+        if ((selfX - playerX) < -11.525f)
         {
             offset += 36.2f;
         }
@@ -31,6 +34,6 @@ public class paisagem : MonoBehaviour
             offset -= 36.2f;
         }
 
-        gameObject.transform.position = new Vector3(selfX, 1, layer);
+        gameObject.transform.position = new Vector3(selfX, selfY, layer);
     }
 }
