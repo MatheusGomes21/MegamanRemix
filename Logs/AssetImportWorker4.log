@@ -320,3 +320,25 @@ Received Import Request.
   path: Assets/Level 2/Animações/Cowbow Animation.png
   artifactKey: Guid(61b046edd3fc1ba49a6473637ac7c495) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
 Start importing Assets/Level 2/Animações/Cowbow Animation.png using Guid(61b046edd3fc1ba49a6473637ac7c495) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8817b69728e1249f3684b2a4fa63fdf8') in 0.049389 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 26.789730 seconds.
+  path: Assets/Prefabs/Baril01.prefab
+  artifactKey: Guid(530452a3669f48d4e9e34de2108bab85) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Baril01.prefab using Guid(530452a3669f48d4e9e34de2108bab85) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '788dae5eaed693cd372706b59966e347') in 0.080051 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.790556 seconds.
+  path: Assets/Prefabs/mega_man_x1_vehicles_in_32_bits_by_irregularsaturn-dai9a38_12.prefab
+  artifactKey: Guid(8b5566a63b6a03f40ab4fa94ca1bcaef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/mega_man_x1_vehicles_in_32_bits_by_irregularsaturn-dai9a38_12.prefab using Guid(8b5566a63b6a03f40ab4fa94ca1bcaef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '46fb55a7d09aa1553e7dff2285419d77') in 0.019740 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/Prefabs/PlayerMM.prefab
+  artifactKey: Guid(d42a24c9cbd336e46aa519ab65fd03d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/PlayerMM.prefab using Guid(d42a24c9cbd336e46aa519ab65fd03d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f976a52cad32c42ef409bdce50ba2943') in 0.028092 seconds 
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+AssetImportWorker is now disconnected from the server
+Process exiting
+Exiting without the bug reporter. Application will terminate with return code 0
