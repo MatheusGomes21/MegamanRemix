@@ -13,7 +13,7 @@ public class cobra : MonoBehaviour
     }
 
     float movement;
-    float speed = 0.003f;
+    float speed = 0.006f;
 
     // Update is called once per frame
     void Update()
