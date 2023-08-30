@@ -7,11 +7,16 @@ public class cacto : MonoBehaviour
 {
     //stats
     public float range;
+    int maxBullets = 3;
+    int waitTime = 500;
+    int wait = 500;
+    public int bullets = 0;
+    
 
     //game Objects
     GameObject player;
     GameObject bullet;
-
+    
 
     // Start is called before the first frame update
     void Start()
@@ -21,14 +26,14 @@ public class cacto : MonoBehaviour
     }
 
     float movement;
-    float speed = 0.003f;
+    float speed = 0.6f;
 
     // Update is called once per frame
     void Update()
     {
         //patrol
-        transform.position += new Vector3(speed, 0, 0);
-        movement += Mathf.Abs(speed);
+        transform.position += new Vector3(speed, 0, 0) * Time.deltaTime;
+        movement += Mathf.Abs(speed/250);
 
         if (movement > 3)
         {
@@ -38,18 +43,23 @@ public class cacto : MonoBehaviour
         }
 
         //shoot
-        if(transform.position.x - player.transform.position.x < range)
+        if(transform.position.x - player.transform.position.x < range && bullets < maxBullets && wait >= waitTime)
         {
             float spawnpointX = 1;
             spawnpointX = transform.position.x - spawnpointX;
 
             Instantiate(bullet, new Vector3(spawnpointX, transform.position.y, 0), transform.rotation);
 
-            //bullet.transform.position = new Vector3(spawnpointX, transform.position.y, 0);
-
+            bullets += 1;
+            wait = 0;
         }
 
-        MonoBehaviour.print(transform.position.x - player.transform.position.x);
+        if(wait < waitTime)
+        {
+            wait += 1;
+        }
+
+        MonoBehaviour.print(bullets);
     }
 
     void OnCollisionEnter2D(Collision2D collider)

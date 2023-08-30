@@ -7,9 +7,12 @@ public class tiroCacto : MonoBehaviour
 {
     //GameObjects
     GameObject player;
+    public cacto cactoScript;
 
     //Stats
     public float speed;
+    float direction;
+    bool directioned = false;
 
     // Start is called before the first frame update
     void Start()
@@ -20,15 +23,19 @@ public class tiroCacto : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(transform.position.x < player.transform.position.x)
+        if(transform.position.x < player.transform.position.x && directioned == false)
         {
-            transform.position += new Vector3(speed, 0, 0) * Time.deltaTime;
+            direction = 1;
+            directioned = true;
         }
 
         else
         {
-            transform.position += new Vector3(-speed, 0, 0) * Time.deltaTime;
+            direction = -1;
+            directioned = true;
         }
+
+        transform.position += new Vector3(speed * direction, 0, 0) * Time.deltaTime;
     }
 
     void OnCollisionEnter2D(Collision2D collider)
@@ -43,6 +50,8 @@ public class tiroCacto : MonoBehaviour
         else
         {
             Destroy(gameObject);
+            cactoScript.bullets -= 1;
+
         }
     }
 }
