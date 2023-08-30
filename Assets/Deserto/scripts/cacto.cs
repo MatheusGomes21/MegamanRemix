@@ -43,8 +43,19 @@ public class cacto : MonoBehaviour
         //shoot
         if(transform.position.x - player.transform.position.x < range && wait >= waitTime)
         {
-            float spawnpointX = 1;
-            spawnpointX = transform.position.x - spawnpointX;
+            float spawnpointX = 0;
+
+            if(transform.position.x > player.transform.position.x)
+            {
+                spawnpointX = -1;
+            }
+
+            if (transform.position.x < player.transform.position.x)
+            {
+                spawnpointX = 1;
+            }
+
+            spawnpointX = transform.position.x + spawnpointX;
 
             Instantiate(bullet, new Vector3(spawnpointX, transform.position.y, 0), transform.rotation);
 
