@@ -11,6 +11,8 @@ public class Control : MonoBehaviour
     float jumptime, jumptimeside;
     public ParticleSystem fire;
     public Animator animator;
+    int bullets;
+    int maxBullets = 3;
     void Start()
     {
         animator = GetComponent<Animator>();
@@ -58,11 +60,13 @@ public class Control : MonoBehaviour
        
         anima.SetBool("Fire", false);
 
-        if (Input.GetButtonDown("Fire1"))
+        if (Input.GetButtonDown("Fire1") && bullets < maxBullets)
         {
             fire.Emit(1);
+            bullets += 1;
             anima.SetBool("Fire", true);
         }
+        MonoBehaviour.print(Time.deltaTime);
     }
    
     void FixedUpdate()
