@@ -41060,7 +41060,7 @@ MonoBehaviour:
   offset: 18.1
   speed: 0.1
   layer: 1
-  selfY: -10
+  selfY: -11
 --- !u!212 &578847418
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -41378,7 +41378,7 @@ MonoBehaviour:
   offset: 18.1
   speed: 0.05
   layer: 2
-  selfY: -8
+  selfY: -9
 --- !u!212 &752136913
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -102313,7 +102313,7 @@ MonoBehaviour:
   offset: 0
   speed: 0.05
   layer: 2
-  selfY: -8
+  selfY: -9
 --- !u!212 &1927027927
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -102867,7 +102867,7 @@ MonoBehaviour:
   offset: 0
   speed: 0.1
   layer: 1
-  selfY: -10
+  selfY: -11
 --- !u!212 &2065142406
 SpriteRenderer:
   m_ObjectHideFlags: 0

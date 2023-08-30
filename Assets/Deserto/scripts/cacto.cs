@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 public class cacto : MonoBehaviour
 {
     //stats
-    public float range;
+    float range = 10;
     int maxBullets = 3;
     int waitTime = 500;
     int wait = 500;

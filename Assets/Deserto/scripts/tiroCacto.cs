@@ -10,7 +10,7 @@ public class tiroCacto : MonoBehaviour
     public cacto cactoScript;
 
     //Stats
-    public float speed;
+    float speed;
     float direction;
     bool directioned = false;
 
