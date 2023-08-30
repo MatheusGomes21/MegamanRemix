@@ -7,10 +7,8 @@ public class cacto : MonoBehaviour
 {
     //stats
     float range = 10;
-    int maxBullets = 3;
     int waitTime = 500;
     int wait = 500;
-    public int bullets = 0;
     
 
     //game Objects
@@ -43,14 +41,13 @@ public class cacto : MonoBehaviour
         }
 
         //shoot
-        if(transform.position.x - player.transform.position.x < range && bullets < maxBullets && wait >= waitTime)
+        if(transform.position.x - player.transform.position.x < range && wait >= waitTime)
         {
             float spawnpointX = 1;
             spawnpointX = transform.position.x - spawnpointX;
 
             Instantiate(bullet, new Vector3(spawnpointX, transform.position.y, 0), transform.rotation);
 
-            bullets += 1;
             wait = 0;
         }
 
@@ -58,8 +55,6 @@ public class cacto : MonoBehaviour
         {
             wait += 1;
         }
-
-        MonoBehaviour.print(bullets);
     }
 
     void OnCollisionEnter2D(Collision2D collider)

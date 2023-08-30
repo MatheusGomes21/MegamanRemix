@@ -7,10 +7,9 @@ public class tiroCacto : MonoBehaviour
 {
     //GameObjects
     GameObject player;
-    public cacto cactoScript;
 
     //Stats
-    float speed;
+    float speed = 2.5f;
     float direction;
     bool directioned = false;
 
@@ -29,7 +28,7 @@ public class tiroCacto : MonoBehaviour
             directioned = true;
         }
 
-        else
+        if (transform.position.x > player.transform.position.x && directioned == false)
         {
             direction = -1;
             directioned = true;
@@ -50,8 +49,6 @@ public class tiroCacto : MonoBehaviour
         else
         {
             Destroy(gameObject);
-            cactoScript.bullets -= 1;
-
         }
     }
 }
