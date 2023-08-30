@@ -5,11 +5,19 @@ using UnityEngine.SceneManagement;
 
 public class cacto : MonoBehaviour
 {
+    //stats
+    public float range;
+
+    //game Objects
+    GameObject player;
+    GameObject bullet;
+
 
     // Start is called before the first frame update
     void Start()
     {
-
+        player = GameObject.Find("Cowboy");
+        bullet = GameObject.Find("TiroCacto");
     }
 
     float movement;
@@ -18,6 +26,7 @@ public class cacto : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        //patrol
         transform.position += new Vector3(speed, 0, 0);
         movement += Mathf.Abs(speed);
 
@@ -27,10 +36,25 @@ public class cacto : MonoBehaviour
             speed *= -1;
             transform.localScale = Vector3.Scale(transform.localScale, new Vector3(-1, 1, 1));
         }
+
+        //shoot
+        if(transform.position.x - player.transform.position.x < range)
+        {
+            float spawnpointX = 1;
+            spawnpointX = transform.position.x - spawnpointX;
+
+            Instantiate(bullet, new Vector3(spawnpointX, transform.position.y, 0), transform.rotation);
+
+            //bullet.transform.position = new Vector3(spawnpointX, transform.position.y, 0);
+
+        }
+
+        MonoBehaviour.print(transform.position.x - player.transform.position.x);
     }
 
     void OnCollisionEnter2D(Collision2D collider)
     {
+        //Kill player
         if (collider.gameObject.tag == "Player")
         {
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
