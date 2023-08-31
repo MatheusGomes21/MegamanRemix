@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class cactoeserva : MonoBehaviour
+public class cactoReserva : MonoBehaviour
 {
     //stats
     float range = 10;
@@ -21,6 +21,8 @@ public class cactoeserva : MonoBehaviour
     {
         player = GameObject.Find("Cowboy");
         bullet = GameObject.Find("TiroCacto");
+
+        StartCoroutine(waiter());
     }
 
     float movement;
@@ -41,31 +43,31 @@ public class cactoeserva : MonoBehaviour
         }
 
         //shoot
-        if (transform.position.x - player.transform.position.x < range && wait >= waitTime)
+        if (transform.position.x - player.transform.position.x < range)
         {
-            float spawnpointX = 0;
+            waiter();
+        }
+    }
 
-            if (transform.position.x > player.transform.position.x)
-            {
-                spawnpointX = -1;
-            }
+    IEnumerator waiter()
+    {
+        float spawnpointX = 0;
 
-            if (transform.position.x < player.transform.position.x)
-            {
-                spawnpointX = 1;
-            }
-
-            spawnpointX = transform.position.x + spawnpointX;
-
-            Instantiate(bullet, new Vector3(spawnpointX, transform.position.y, 0), transform.rotation);
-
-            wait = 0;
+        if (transform.position.x > player.transform.position.x)
+        {
+            spawnpointX = -1;
         }
 
-        if (wait < waitTime)
+        if (transform.position.x < player.transform.position.x)
         {
-            wait += 1;
+            spawnpointX = 1;
         }
+
+        yield return new WaitForSeconds(3);
+
+        spawnpointX = transform.position.x + spawnpointX;
+
+        Instantiate(bullet, new Vector3(spawnpointX, transform.position.y, 0), transform.rotation);
     }
 
     void OnCollisionEnter2D(Collision2D collider)

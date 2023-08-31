@@ -9,20 +9,22 @@ public class cacto : MonoBehaviour
     float range = 10;
     int waitTime = 500;
     int wait = 500;
-    
+
 
     //game Objects
     GameObject player;
     GameObject bullet;
-    
+
+    //components
+    Animator animator;
+
 
     // Start is called before the first frame update
     void Start()
     {
         player = GameObject.Find("Cowboy");
         bullet = GameObject.Find("TiroCacto");
-
-        StartCoroutine(waiter());
+        animator = gameObject.GetComponent<Animator>();
     }
 
     float movement;
@@ -33,7 +35,7 @@ public class cacto : MonoBehaviour
     {
         //patrol
         transform.position += new Vector3(speed, 0, 0) * Time.deltaTime;
-        movement += Mathf.Abs(speed/250);
+        movement += Mathf.Abs(speed / 250);
 
         if (movement > 3)
         {
@@ -43,31 +45,34 @@ public class cacto : MonoBehaviour
         }
 
         //shoot
-        if(transform.position.x - player.transform.position.x < range)
+        if (wait < waitTime)
         {
-            waiter();
-        }
-    }
-
-    IEnumerator waiter()
-    {
-        float spawnpointX = 0;
-
-        if (transform.position.x > player.transform.position.x)
-        {
-            spawnpointX = -1;
+            animator.SetBool("Shooting", false);
+            wait += 1;
         }
 
-        if (transform.position.x < player.transform.position.x)
+        if (transform.position.x - player.transform.position.x < range && wait >= waitTime)
         {
-            spawnpointX = 1;
+            float spawnpointX = 0;
+
+            if (transform.position.x > player.transform.position.x)
+            {
+                spawnpointX = -1;
+            }
+
+            if (transform.position.x < player.transform.position.x)
+            {
+                spawnpointX = 1;
+            }
+
+            spawnpointX = transform.position.x + spawnpointX;
+
+            animator.SetBool("Shooting", true);
+            Instantiate(bullet, new Vector3(spawnpointX, transform.position.y, 0), transform.rotation);
+
+            wait = 0;
+            
         }
-
-        yield return new WaitForSeconds(3);
-
-        spawnpointX = transform.position.x + spawnpointX;
-
-        Instantiate(bullet, new Vector3(spawnpointX, transform.position.y, 0), transform.rotation);
     }
 
     void OnCollisionEnter2D(Collision2D collider)
