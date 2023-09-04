@@ -47,7 +47,11 @@ public class cacto : MonoBehaviour
         //shoot
         if (wait < waitTime)
         {
-            animator.SetBool("Shooting", false);
+            if(wait > 50)
+            {
+                animator.SetBool("Shooting", false);
+            }
+  
             wait += 1;
         }
 
@@ -58,11 +62,15 @@ public class cacto : MonoBehaviour
             if (transform.position.x > player.transform.position.x)
             {
                 spawnpointX = -1;
+                transform.localScale = new Vector3(1, 1, 1);
+                bullet.transform.localScale = new Vector3(-1, 1, 1);
             }
 
             if (transform.position.x < player.transform.position.x)
             {
                 spawnpointX = 1;
+                transform.localScale = new Vector3(-1, 1, 1);
+                bullet.transform.localScale = new Vector3(1, 1, 1);
             }
 
             spawnpointX = transform.position.x + spawnpointX;

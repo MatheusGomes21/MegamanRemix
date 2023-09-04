@@ -11,7 +11,7 @@ public class tiroCowboy : MonoBehaviour
     Camera cam;
 
     //Stats
-    float speed = 2;
+    float speed = 3;
     float direction;
     float selfX = 0;
     float selfY = 0;
@@ -27,13 +27,14 @@ public class tiroCowboy : MonoBehaviour
         float mouseY = mouseWorldPosition.y;
         float playerX = player.transform.position.x;
         float playerY = player.transform.position.y;
-        float ratio = (playerX / mouseX);
-        float systemMouseY = mouseY * ratio;
+        float deltaY = mouseY - playerY;
+        float deltaX = mouseX - playerX;
+        float ratio = deltaX / deltaY;
 
-        b = (playerY - systemMouseY) / (-ratio + 1);
-        a = (playerY - b) / playerX;
+        selfY = Mathf.Sqrt(Mathf.Pow(speed, 2) / (Mathf.Pow(ratio, 2) + 1));
+        selfX = selfY * ratio;
 
-        MonoBehaviour.print(playerY-b);
+        MonoBehaviour.print(a.ToString() + "/" + b.ToString());
         return;
     }
 
@@ -44,7 +45,6 @@ public class tiroCowboy : MonoBehaviour
         player = GameObject.Find("Cowboy");
         camera = GameObject.Find("MainCamera");
         cam = camera.GetComponent<Camera>();
-        selfY = transform.position.y;
         TrackPath();
 
         if (transform.position.x < player.transform.position.x)
@@ -61,20 +61,15 @@ public class tiroCowboy : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        float newY = (transform.position.x * a + b) * 1000;
-        selfX = speed * direction;
-        selfY = newY - selfY;
-
         transform.position += new Vector3(selfX, selfY, 0) * Time.deltaTime;
 
-        selfY = newY;
         //MonoBehaviour.print("AQUIIIII ---> " + a + "////" + newY);
     }
 
     void OnCollisionEnter2D(Collision2D collider)
     {
         //Kill player
-        if (collider.gameObject.tag == "Player")
+        if (collider.gameObject.tag == "Cacto")
         {
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         }
@@ -82,7 +77,7 @@ public class tiroCowboy : MonoBehaviour
         //destroy bullet
         else
         {
-            Destroy(gameObject);
+         
         }
     }
 }

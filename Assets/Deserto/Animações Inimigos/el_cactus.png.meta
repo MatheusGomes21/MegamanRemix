@@ -33,7 +33,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -47,7 +47,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 32
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -70,7 +70,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -619,10 +619,10 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      el_cactus_13: -709272551
       el_cactus_16: -709289548
       el_cactus_6: 955794554
-      el_cactus_19: -706899107
+      el_cactus_2: -824980977
+      el_cactus_4: -1057344820
       el_cactus_14: -131474562
       el_cactus_10: 226347925
       el_cactus_5: -402957459
@@ -640,8 +640,8 @@ TextureImporter:
       el_cactus_17: -426442232
       el_cactus_20: 2142271425
       el_cactus_22: -116360650
-      el_cactus_2: -824980977
-      el_cactus_4: -1057344820
+      el_cactus_13: -709272551
+      el_cactus_19: -706899107
       el_cactus_18: -398525300
   spritePackingTag: 
   pSDRemoveMatte: 0
