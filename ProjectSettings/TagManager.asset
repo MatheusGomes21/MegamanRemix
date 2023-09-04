@@ -7,6 +7,8 @@ TagManager:
   - Damage
   - Enemy
   - Bullet
+  - Collection
+  - Estrela
   layers:
   - Default
   - TransparentFX
