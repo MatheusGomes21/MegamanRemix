@@ -7,15 +7,18 @@ public class Control : MonoBehaviour
     public Animator anima;
     float xmov;
     public Rigidbody2D rdb;
-    bool jump,doublejump;
+    bool jump, doublejump;
     float jumptime, jumptimeside;
     public ParticleSystem fire;
     public Animator animator;
     int bullets;
     int maxBullets = 3;
+    GameObject bullet;
+
     void Start()
     {
         animator = GetComponent<Animator>();
+        bullet = GameObject.Find("TiroCowboy");
     }
     void Update()
     {
@@ -57,25 +60,42 @@ public class Control : MonoBehaviour
             jumptimeside = 0;
         }
 
-       
+
         anima.SetBool("Fire", false);
 
-        if (Input.GetButtonDown("Fire1") && bullets < maxBullets)
+        if (Input.GetButtonDown("Fire1"))
         {
-            fire.Emit(1);
+            //fire.Emit(1);
+
+            float spawnpointX = 0;
+
+            if (Input.mousePosition.x > transform.position.x)
+            {
+                spawnpointX = 1;
+            }
+
+            if (Input.mousePosition.x < transform.position.x)
+            {
+                spawnpointX = -1;
+            }
+
+            spawnpointX = transform.position.x + spawnpointX;
+
+            animator.SetBool("Shooting", true);
+            Instantiate(bullet, new Vector3(spawnpointX, transform.position.y, 0), transform.rotation);
+
             bullets += 1;
             anima.SetBool("Fire", true);
         }
-        MonoBehaviour.print(Time.deltaTime);
     }
-   
+
     void FixedUpdate()
     {
         Reverser();
         anima.SetFloat("Velocity", Mathf.Abs(xmov));
         //rdb.velocity = new Vector2(xmov * 1.3f, rdb.velocity.y);
 
-        rdb.AddForce(new Vector2(xmov * 20/(rdb.velocity.magnitude+1), 0));
+        rdb.AddForce(new Vector2(xmov * 20 / (rdb.velocity.magnitude + 1), 0));
 
         RaycastHit2D hit;
         hit = Physics2D.Raycast(transform.position, Vector2.down);
@@ -86,8 +106,8 @@ public class Control : MonoBehaviour
         }
 
         RaycastHit2D hitright;
-        hitright = Physics2D.Raycast(transform.position+
-            Vector3.up*0.5f, transform.right,1);
+        hitright = Physics2D.Raycast(transform.position +
+            Vector3.up * 0.5f, transform.right, 1);
 
         if (hitright)
         {
@@ -95,11 +115,11 @@ public class Control : MonoBehaviour
             {
                 JumpRoutineSide(hitright);
             }
-            Debug.DrawLine(hitright.point, transform.position 
+            Debug.DrawLine(hitright.point, transform.position
                 + Vector3.up * 0.5f);
         }
 
-        
+
     }
     /// <summary>
     /// rotina de pulo parte fisica
@@ -111,30 +131,30 @@ public class Control : MonoBehaviour
         {
             jumptime = 1;
         }
-      
 
-            if (jump)
-            {
-                jumptime = Mathf.Lerp(jumptime, 0, Time.fixedDeltaTime * 10);
-                rdb.AddForce(Vector2.up * jumptime, ForceMode2D.Impulse);
-            }
-        
+
+        if (jump)
+        {
+            jumptime = Mathf.Lerp(jumptime, 0, Time.fixedDeltaTime * 10);
+            rdb.AddForce(Vector2.up * jumptime, ForceMode2D.Impulse);
+        }
+
     }
 
     private void JumpRoutineSide(RaycastHit2D hitside)
     {
-        if (hitside.distance < 0.3f )
+        if (hitside.distance < 0.3f)
         {
 
             jumptimeside = 1;
-           
+
         }
 
         if (doublejump)
         {
             PhisicalReverser();
-            jumptimeside = Mathf.Lerp(jumptimeside, 0, Time.fixedDeltaTime*10);
-            rdb.AddForce((hitside.normal*50 + Vector2.up*80) * jumptimeside);
+            jumptimeside = Mathf.Lerp(jumptimeside, 0, Time.fixedDeltaTime * 10);
+            rdb.AddForce((hitside.normal * 50 + Vector2.up * 80) * jumptimeside);
         }
     }
 
