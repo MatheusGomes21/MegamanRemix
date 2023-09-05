@@ -13,15 +13,15 @@ public class cobra : MonoBehaviour
     }
 
     float movement;
-    float speed = 0.006f;
+    float speed = 1;
 
     // Update is called once per frame
     void Update()
     {
-        transform.position += new Vector3(speed, 0, 0);
-        movement += Mathf.Abs(speed);
+        transform.position += new Vector3(speed, 0, 0) * Time.deltaTime;
+        movement += Mathf.Abs(speed / 250);
 
-        if(movement > 3)
+        if(movement > 1.65f)
         {
             movement = 0;
             speed *= -1;
