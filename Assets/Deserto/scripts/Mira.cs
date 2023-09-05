@@ -7,6 +7,7 @@ public class Mira : MonoBehaviour
     public Animator animator;
     public Animator fxAnimator;
     GameObject tiroFx;
+    GameObject enemy;
     Camera camera;
     Vector3 mousePosit;
     float rotation;
@@ -40,6 +41,8 @@ public class Mira : MonoBehaviour
         {
             animator.SetBool(animacao, true);
             fxAnimator.SetBool("Pow", true);
+
+            Destroy(enemy);
         }
 
         else
@@ -54,12 +57,13 @@ public class Mira : MonoBehaviour
         if (collision.tag == "Enemy")
         {
             animacao = "Acertou";
-            MonoBehaviour.print("unhe");
+            enemy = collision.gameObject;
         }
     }
 
     private void OnTriggerExit2D(Collider2D collision)
     {
         animacao = "Errou";
+        enemy = null;
     }
 }

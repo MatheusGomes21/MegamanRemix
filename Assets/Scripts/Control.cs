@@ -66,7 +66,7 @@ public class Control : MonoBehaviour
         //atirar
         if (Input.GetButtonDown("Fire1"))
         {
-            fire.Emit(1);
+            //fire.Emit(1);
         }
     }
 
