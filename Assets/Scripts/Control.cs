@@ -11,17 +11,16 @@ public class Control : MonoBehaviour
     float jumptime, jumptimeside;
     public ParticleSystem fire;
     public Animator animator;
+
+
     int bullets;
     int maxBullets = 3;
     GameObject bullet;
-    Camera camera;
-    Vector3 mousePosit;
 
     void Start()
     {
         animator = GetComponent<Animator>();
         bullet = GameObject.Find("TiroCowboy");
-        camera = GameObject.Find("MainCamera").GetComponent<Camera>();
         
     }
     void Update()
@@ -66,7 +65,6 @@ public class Control : MonoBehaviour
 
         //atirar
         anima.SetBool("Fire", false);
-        mousePosit = camera.WorldToScreenPoint(Input.mousePosition);
 
         if (Input.GetButtonDown("Fire1"))
         {
