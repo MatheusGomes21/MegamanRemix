@@ -6,8 +6,9 @@ using UnityEngine.SceneManagement;
 public class cacto : MonoBehaviour
 {
     //stats
-    float range = 10;
-    int waitTime = 2000;
+    public float range = 10;
+    public int waitTime = 2000;
+    public float patrolSize = 3;
     int wait = 500;
 
 
@@ -28,7 +29,7 @@ public class cacto : MonoBehaviour
     }
 
     float movement;
-    float speed = 0.6f;
+    public float speed = 0.6f;
 
     // Update is called once per frame
     void Update()
@@ -37,7 +38,7 @@ public class cacto : MonoBehaviour
         transform.position += new Vector3(speed, 0, 0) * Time.deltaTime;
         movement += Mathf.Abs(speed / 250);
 
-        if (movement > 3)
+        if (movement > patrolSize)
         {
             movement = 0;
             speed *= -1;
