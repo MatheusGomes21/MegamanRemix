@@ -7,7 +7,7 @@ public class cacto : MonoBehaviour
 {
     //stats
     float range = 10;
-    int waitTime = 950;
+    int waitTime = 2000;
     int wait = 500;
 
 
