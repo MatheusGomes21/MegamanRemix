@@ -46,7 +46,7 @@ public class tiroCacto : MonoBehaviour
         }
 
         //destroy bullet
-        else
+        else if(collider.gameObject.tag != "Enemy")
         {
             Destroy(gameObject);
         }
