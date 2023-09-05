@@ -21,7 +21,7 @@ public class Nave : MonoBehaviour
     {
         transform.position = player.transform.position + new Vector3(-1, 4, 0);
 
-        transform.position += new Vector3(speed, 0, 0) * Time.deltaTime;
+        transform.position += new Vector3(0, speed, 0) * Time.deltaTime;
         movement += Mathf.Abs(speed / 250);
 
         if (movement > 3)
