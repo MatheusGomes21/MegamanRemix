@@ -5,6 +5,8 @@ using UnityEngine;
 public class Mira : MonoBehaviour
 {
     public Animator animator;
+    public Animator fxAnimator;
+    GameObject tiroFx;
     Camera camera;
     Vector3 mousePosit;
     float rotation;
@@ -16,6 +18,7 @@ public class Mira : MonoBehaviour
     void Start()
     {
         camera = GameObject.Find("MainCamera").GetComponent<Camera>();
+        tiroFx = GameObject.Find("TiroEfeito");
     }
 
     // Update is called once per frame
@@ -23,7 +26,8 @@ public class Mira : MonoBehaviour
     {
         //follow mouse
         mousePosit = camera.ScreenToWorldPoint(Input.mousePosition);
-        transform.position = new Vector3(mousePosit.x, mousePosit.y, 0);
+        transform.position = new Vector3(mousePosit.x, mousePosit.y, -3);
+        tiroFx.transform.position = transform.position;
 
         //spin
         transform.rotation = Quaternion.Euler(new Vector3(0, 0, rotation));
@@ -35,11 +39,13 @@ public class Mira : MonoBehaviour
         if (Input.GetAxis("Fire1") != 0)
         {
             animator.SetBool(animacao, true);
+            fxAnimator.SetBool("Pow", true);
         }
 
         else
         {
             animator.SetBool(animacao, false);
+            fxAnimator.SetBool("Pow", false);
         }
     }
 
