@@ -720,6 +720,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: New Snakes_0 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 3047421130272798046, guid: 5e478c3643894324f9f5f3f53f773f6e,
+        type: 3}
+      propertyPath: m_TagString
+      value: Enemy
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5e478c3643894324f9f5f3f53f773f6e, type: 3}
 --- !u!1 &144247732
@@ -32292,6 +32297,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Cacto
+      objectReference: {fileID: 0}
+    - target: {fileID: 2206552095174783182, guid: 1cbd585b58182ed4ba34b51c43eccb01,
+        type: 3}
+      propertyPath: m_TagString
+      value: Enemy
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1cbd585b58182ed4ba34b51c43eccb01, type: 3}

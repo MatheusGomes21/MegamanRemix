@@ -9,6 +9,7 @@ public class Mira : MonoBehaviour
     Vector3 mousePosit;
     float rotation;
     string[] inimigos = { "Cobra", "Cacto" };
+    string animacao = "Errou";
 
 
     // Start is called before the first frame update
@@ -28,24 +29,31 @@ public class Mira : MonoBehaviour
         transform.rotation = Quaternion.Euler(new Vector3(0, 0, rotation));
         rotation += 0.2f;
 
+        animator.SetBool("Errou", false);
         animator.SetBool("Acertou", false);
 
         if (Input.GetAxis("Fire1") != 0)
         {
-            animator.SetBool("Errou", true);
+            animator.SetBool(animacao, true);
         }
 
         else
         {
-            animator.SetBool("Errou", false);
+            animator.SetBool(animacao, false);
         }
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (inimigos.Contains(collision.tag))
+        if (collision.tag == "Enemy")
         {
+            animacao = "Acertou";
+            MonoBehaviour.print("unhe");
+        }
 
+        else
+        {
+            animacao = "Errou";
         }
     }
 }
