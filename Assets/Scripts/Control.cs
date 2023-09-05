@@ -74,7 +74,7 @@ public class Control : MonoBehaviour
     {
         Reverser();
         anima.SetFloat("Velocity", Mathf.Abs(xmov));
-        //rdb.velocity = new Vector2(xmov * 1.3f, rdb.velocity.y);
+        //rdb.velocity = new vector2(xmov * 1.3f, rdb.velocity.y);
 
         rdb.AddForce(new Vector2(xmov * 20 / (rdb.velocity.magnitude + 1), 0));
 

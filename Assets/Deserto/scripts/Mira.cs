@@ -56,10 +56,10 @@ public class Mira : MonoBehaviour
             animacao = "Acertou";
             MonoBehaviour.print("unhe");
         }
+    }
 
-        else
-        {
-            animacao = "Errou";
-        }
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        animacao = "Errou";
     }
 }
