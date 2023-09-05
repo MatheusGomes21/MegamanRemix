@@ -9,6 +9,7 @@ public class Nave : MonoBehaviour
     //stats
     public float speed = 2;
     public float movement;
+    bool right = true;
 
     // Start is called before the first frame update
     void Start()
@@ -19,35 +20,35 @@ public class Nave : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.position = player.transform.position + new Vector3(-1, 4, 0);
+        //transform.position = player.transform.position + new Vector3(-1, 4, 0);
 
-        transform.position += new Vector3(0, speed, 0) * Time.deltaTime;
-        movement += Mathf.Abs(speed / 250);
+        //transform.position += new Vector3(speed, 0, 0) * Time.deltaTime;
+        //movement += Mathf.Abs(speed / 250);
 
-        if (movement > 3)
+        //if (movement > 3)
+        //{
+        //    movement = 0;
+        //    speed *= -1;
+        //    transform.localScale = Vector3.Scale(transform.localScale, new Vector3(-1, 1, 1));
+        //}
+
+        if (right)
         {
-            movement = 0;
-            speed *= -1;
-            transform.localScale = Vector3.Scale(transform.localScale, new Vector3(-1, 1, 1));
+            transform.position += new Vector3(0.003f, 0, 0);
+            if (transform.position.x > player.transform.position.x)
+            {
+                right = false;
+                transform.rotation = Quaternion.Euler(0, 0, 0);
+            }
         }
-
-        //if (right)
-        //{
-        //    transform.position += new Vector3(0.005f, 0, 0);
-        //    if (transform.position.x > limiteDir)
-        //    {
-        //        right = false;
-        //        transform.rotation = Quaternion.Euler(0,0,0);
-        //    }
-        //}
-        //else
-        //{
-        //    transform.position -= new Vector3(0.005f,0, 0);
-        //    if(transform.position.x < limiteEsq)
-        //    {
-        //        right = true;
-        //        transform.rotation = Quaternion.Euler (0,180,0);
-        //    }
-        //}
+        else
+        {
+            transform.position -= new Vector3(0.003f, 0, 0);
+            if (transform.position.x < player.transform.position.y)
+            {
+                right = true;
+                transform.rotation = Quaternion.Euler(0, 180, 0);
+            }
+        }
     }
 }

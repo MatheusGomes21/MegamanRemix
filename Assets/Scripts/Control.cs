@@ -14,11 +14,15 @@ public class Control : MonoBehaviour
     int bullets;
     int maxBullets = 3;
     GameObject bullet;
+    Camera camera;
+    Vector3 mousePosit;
 
     void Start()
     {
         animator = GetComponent<Animator>();
         bullet = GameObject.Find("TiroCowboy");
+        camera = GameObject.Find("MainCamera").GetComponent<Camera>();
+        
     }
     void Update()
     {
@@ -60,32 +64,14 @@ public class Control : MonoBehaviour
             jumptimeside = 0;
         }
 
-
+        //atirar
         anima.SetBool("Fire", false);
+        mousePosit = camera.WorldToScreenPoint(Input.mousePosition);
 
         if (Input.GetButtonDown("Fire1"))
         {
             fire.Emit(1);
-
-            //float spawnpointX = 0;
-
-            //if (Input.mousePosition.x > transform.position.x)
-            //{
-            //    spawnpointX = 1;
-            //}
-
-            //if (Input.mousePosition.x < transform.position.x)
-            //{
-            //    spawnpointX = -1;
-            //}
-
-            //spawnpointX = transform.position.x + spawnpointX;
-
-            //animator.SetBool("Shooting", true);
-            //Instantiate(bullet, new Vector3(spawnpointX, transform.position.y, 0), transform.rotation);
-
-            //bullets += 1;
-            //anima.SetBool("Fire", true);
+            anima.SetBool("Fire", true);
         }
     }
 
