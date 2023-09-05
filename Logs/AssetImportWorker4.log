@@ -962,3 +962,31 @@ AssetImportParameters requested are different than current active one (requested
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
   custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 191.132648 seconds.
+  path: Assets/Level 2/Prefabs
+  artifactKey: Guid(50d603a4560404b4887187ec94d7b48f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Level 2/Prefabs using Guid(50d603a4560404b4887187ec94d7b48f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1652487c19ba5bb1716379f60b06d02e') in 0.011590 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.048385 seconds.
+  path: Assets/Level 2/Prefabs/Cacto.prefab
+  artifactKey: Guid(1cbd585b58182ed4ba34b51c43eccb01) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Level 2/Prefabs/Cacto.prefab using Guid(1cbd585b58182ed4ba34b51c43eccb01) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '465dbc08ba456f97b71eece4c231d965') in 0.080158 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Level 2/Prefabs/Cowboy.prefab
+  artifactKey: Guid(d39e7c62d7ea14f4297bd94d34b2b249) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Level 2/Prefabs/Cowboy.prefab using Guid(d39e7c62d7ea14f4297bd94d34b2b249) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aca4aff5a7480f6b881b02a05f139501') in 0.028115 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Level 2/Prefabs/New Snakes_0.prefab
+  artifactKey: Guid(5e478c3643894324f9f5f3f53f773f6e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Level 2/Prefabs/New Snakes_0.prefab using Guid(5e478c3643894324f9f5f3f53f773f6e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b9f5f8a22b15c9ee1ebfb990a3124a30') in 0.014840 seconds 
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+AssetImportWorker is now disconnected from the server
+Process exiting
+Exiting without the bug reporter. Application will terminate with return code 0
