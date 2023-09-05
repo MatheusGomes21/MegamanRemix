@@ -8,6 +8,7 @@ public class Mira : MonoBehaviour
     Camera camera;
     Vector3 mousePosit;
     float rotation;
+    string[] inimigos = { "Cobra", "Cacto" };
 
 
     // Start is called before the first frame update
@@ -29,9 +30,22 @@ public class Mira : MonoBehaviour
 
         animator.SetBool("Acertou", false);
 
-        if (Input.GetButtonDown("Fire1"))
+        if (Input.GetAxis("Fire1") != 0)
         {
-            animator.SetBool("Acertou", true);
+            animator.SetBool("Errou", true);
+        }
+
+        else
+        {
+            animator.SetBool("Errou", false);
+        }
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (inimigos.Contains(collision.tag))
+        {
+
         }
     }
 }

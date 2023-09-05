@@ -64,12 +64,9 @@ public class Control : MonoBehaviour
         }
 
         //atirar
-        anima.SetBool("Fire", false);
-
         if (Input.GetButtonDown("Fire1"))
         {
             fire.Emit(1);
-            anima.SetBool("Fire", true);
         }
     }
 
