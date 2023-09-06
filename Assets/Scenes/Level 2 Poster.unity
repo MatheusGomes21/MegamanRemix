@@ -62115,11 +62115,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cowboy
       objectReference: {fileID: 0}
-    - target: {fileID: 6734274191776820617, guid: 557f72216161e5d408720facf4833901,
-        type: 3}
-      propertyPath: animator
-      value: 
-      objectReference: {fileID: 1689738507}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 557f72216161e5d408720facf4833901, type: 3}
 --- !u!4 &1333175278 stripped
@@ -63167,31 +63162,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: af42f1ce887b92f47b06c04f2759a6af, type: 3}
---- !u!1 &1689738502 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6733976097439510131, guid: 557f72216161e5d408720facf4833901,
-    type: 3}
-  m_PrefabInstance: {fileID: 1329350094}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1689738503
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1689738502}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4646932e185959742bac3f6ceea57acb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Estrela: 0
---- !u!95 &1689738507 stripped
-Animator:
-  m_CorrespondingSourceObject: {fileID: 6640441524333581211, guid: 557f72216161e5d408720facf4833901,
-    type: 3}
-  m_PrefabInstance: {fileID: 1329350094}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1697277798
 GameObject:
   m_ObjectHideFlags: 0

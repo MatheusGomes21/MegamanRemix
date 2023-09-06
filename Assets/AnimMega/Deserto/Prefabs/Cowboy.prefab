@@ -9970,6 +9970,7 @@ GameObject:
   - component: {fileID: 6693220705742360353}
   - component: {fileID: 6741251902124986467}
   - component: {fileID: 6734274191776820617}
+  - component: {fileID: 1689738503}
   m_Layer: 2
   m_Name: Cowboy
   m_TagString: Player
@@ -10149,4 +10150,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   jumpForce: 8
-  animator: {fileID: 0}
+  animator: {fileID: 6640441524333581211}
+--- !u!114 &1689738503
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6733976097439510131}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4646932e185959742bac3f6ceea57acb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Estrela: 0
