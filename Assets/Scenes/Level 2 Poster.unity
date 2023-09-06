@@ -799,7 +799,7 @@ GameObject:
   - component: {fileID: 256256596}
   - component: {fileID: 256256595}
   m_Layer: 0
-  m_Name: "Placa de sinaliza\xE7\xE3o trem - Copy_0"
+  m_Name: PlacaTrem
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -62115,6 +62115,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cowboy
       objectReference: {fileID: 0}
+    - target: {fileID: 6734274191776820617, guid: 557f72216161e5d408720facf4833901,
+        type: 3}
+      propertyPath: animator
+      value: 
+      objectReference: {fileID: 1689738507}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 557f72216161e5d408720facf4833901, type: 3}
 --- !u!4 &1333175278 stripped
@@ -63181,6 +63186,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Estrela: 0
+--- !u!95 &1689738507 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 6640441524333581211, guid: 557f72216161e5d408720facf4833901,
+    type: 3}
+  m_PrefabInstance: {fileID: 1329350094}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1697277798
 GameObject:
   m_ObjectHideFlags: 0
@@ -63851,7 +63862,7 @@ GameObject:
   - component: {fileID: 1884820748}
   - component: {fileID: 1884820751}
   m_Layer: 0
-  m_Name: Main Camera
+  m_Name: MainCamera
   m_TagString: MainCamera
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
