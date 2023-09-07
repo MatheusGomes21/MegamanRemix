@@ -25,6 +25,9 @@ public class Mira : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        //hide cursor
+        Cursor.visible = false;
+
         //follow mouse
         mousePosit = camera.ScreenToWorldPoint(Input.mousePosition);
         transform.position = new Vector3(mousePosit.x, mousePosit.y, -3);
