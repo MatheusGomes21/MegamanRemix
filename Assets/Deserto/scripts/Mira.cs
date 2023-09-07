@@ -37,7 +37,7 @@ public class Mira : MonoBehaviour
         animator.SetBool("Errou", false);
         animator.SetBool("Acertou", false);
 
-        if (Input.GetAxis("Fire1") != 0)
+        if (Input.GetButtonDown("Fire1"))
         {
             animator.SetBool(animacao, true);
             fxAnimator.SetBool("Pow", true);

@@ -1,6 +1,10 @@
 Using pre-set license
 Built from '2021.3/evg/staging/82bb020e-b03b1330/draft-0' branch; Version is '2021.3.16f1 (4016570cf34f) revision 4200023'; Using compiler version '192829333'; Build Type 'Release'
+<<<<<<< Updated upstream
 OS: 'Windows 11  (10.0.22621) 64bit CoreSingleLanguage' Language: 'pt' Physical Memory: 16147 MB
+=======
+OS: 'Windows 10  (10.0.19045) 64bit Core' Language: 'pt' Physical Memory: 16314 MB
+>>>>>>> Stashed changes
 BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
 
 COMMAND LINE ARGUMENTS:
@@ -11,6 +15,7 @@ D:\2021.3.16f1\Editor\Unity.exe
 -name
 AssetImportWorker0
 -projectPath
+<<<<<<< Updated upstream
 D:/Projetos/Unity/MegamanRemix
 -logFile
 Logs/AssetImportWorker0.log
@@ -18,6 +23,15 @@ Logs/AssetImportWorker0.log
 59168
 Successfully changed project path to: D:/Projetos/Unity/MegamanRemix
 D:/Projetos/Unity/MegamanRemix
+=======
+E:/Faculdade/2 Semestre/MegamanMexico/MegamanRemix
+-logFile
+Logs/AssetImportWorker0.log
+-srvPort
+51600
+Successfully changed project path to: E:/Faculdade/2 Semestre/MegamanMexico/MegamanRemix
+E:/Faculdade/2 Semestre/MegamanMexico/MegamanRemix
+>>>>>>> Stashed changes
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
     "memorysetup-bucket-allocator-granularity=16"
     "memorysetup-bucket-allocator-bucket-count=8"
@@ -47,6 +61,7 @@ D:/Projetos/Unity/MegamanRemix
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
+<<<<<<< Updated upstream
 Player connection [26148] Host "[IP] 192.168.0.162 [Port] 0 [Flags] 2 [Guid] 4251924485 [EditorId] 4251924485 [Version] 1048832 [Id] WindowsEditor(7,Badskyfox) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
 
 Player connection [26148] Host "[IP] 192.168.0.162 [Port] 0 [Flags] 2 [Guid] 4251924485 [EditorId] 4251924485 [Version] 1048832 [Id] WindowsEditor(7,Badskyfox) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
@@ -82,10 +97,46 @@ Mono: successfully reloaded assembly
 Domain Reload Profiling:
 	ReloadAssembly (964ms)
 		BeginReloadAssembly (60ms)
+=======
+Player connection [17684] Host "[IP] 192.168.2.101 [Port] 0 [Flags] 2 [Guid] 2008483872 [EditorId] 2008483872 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-LC3DVTR) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+
+Player connection [17684] Host "[IP] 192.168.2.101 [Port] 0 [Flags] 2 [Guid] 2008483872 [EditorId] 2008483872 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-LC3DVTR) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+
+Refreshing native plugins compatible for Editor in 210.49 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2021.3.16f1 (4016570cf34f)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2021.3.16f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path E:/Faculdade/2 Semestre/MegamanMexico/MegamanRemix/Assets
+GfxDevice: creating device client; threaded=0; jobified=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: Radeon (TM) RX 470 Graphics (ID=0x67df)
+    Vendor:   ATI
+    VRAM:     4074 MB
+    Driver:   31.0.14057.5006
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2021.3.16f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2021.3.16f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2021.3.16f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56248
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.16f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.055543 seconds.
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 72.64 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.898 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1899ms)
+		BeginReloadAssembly (688ms)
+>>>>>>> Stashed changes
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
+<<<<<<< Updated upstream
 			CreateAndSetChildDomain (1ms)
 		EndReloadAssembly (821ms)
 			LoadAssemblies (59ms)
@@ -101,12 +152,30 @@ Domain Reload Profiling:
 				BeforeProcessingInitializeOnLoad (1ms)
 				ProcessInitializeOnLoadAttributes (75ms)
 				ProcessInitializeOnLoadMethodAttributes (38ms)
+=======
+			CreateAndSetChildDomain (2ms)
+		EndReloadAssembly (804ms)
+			LoadAssemblies (675ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (220ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (43ms)
+			SetupLoadedEditorAssemblies (411ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (13ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (73ms)
+				BeforeProcessingInitializeOnLoad (2ms)
+				ProcessInitializeOnLoadAttributes (225ms)
+				ProcessInitializeOnLoadMethodAttributes (98ms)
+>>>>>>> Stashed changes
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
+<<<<<<< Updated upstream
 Registered in 0.006759 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
@@ -139,12 +208,46 @@ Domain Reload Profiling:
 				ProcessInitializeOnLoadAttributes (191ms)
 				ProcessInitializeOnLoadMethodAttributes (212ms)
 				AfterProcessingInitializeOnLoad (2ms)
+=======
+Registered in 0.073968 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.21 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Package Manager log level set to [2]
+Mono: successfully reloaded assembly
+- Completed reload, in  2.700 seconds
+Domain Reload Profiling:
+	ReloadAssembly (2701ms)
+		BeginReloadAssembly (195ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (9ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (41ms)
+		EndReloadAssembly (2290ms)
+			LoadAssemblies (280ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (407ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (426ms)
+			SetupLoadedEditorAssemblies (754ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (9ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (109ms)
+				ProcessInitializeOnLoadAttributes (405ms)
+				ProcessInitializeOnLoadMethodAttributes (205ms)
+				AfterProcessingInitializeOnLoad (23ms)
+>>>>>>> Stashed changes
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (7ms)
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
+<<<<<<< Updated upstream
 Launched and connected shader compiler UnityShaderCompiler.exe after 0.05 seconds
 Refreshing native plugins compatible for Editor in 0.84 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
@@ -152,6 +255,15 @@ Unloading 2340 Unused Serialized files (Serialized files now loaded: 0)
 Unloading 77 unused Assets / (60.7 KB). Loaded Objects now: 2799.
 Memory consumption went from 87.4 MB to 87.3 MB.
 Total: 5.771800 ms (FindLiveObjects: 0.310800 ms CreateObjectMapping: 0.200000 ms MarkObjects: 5.083900 ms  DeleteObjects: 0.175000 ms)
+=======
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.08 seconds
+Refreshing native plugins compatible for Editor in 4.35 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2340 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 77 unused Assets / (61.2 KB). Loaded Objects now: 2799.
+Memory consumption went from 87.4 MB to 87.4 MB.
+Total: 13.569500 ms (FindLiveObjects: 0.366600 ms CreateObjectMapping: 0.132100 ms MarkObjects: 12.934000 ms  DeleteObjects: 0.134600 ms)
+>>>>>>> Stashed changes
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
@@ -165,6 +277,7 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
+<<<<<<< Updated upstream
   Time since last request: 1278985.646204 seconds.
   path: Assets/ForwardRenderer.asset
   artifactKey: Guid(d0373411a7496634db3a2b14a2f097b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
@@ -265,6 +378,18 @@ Received Import Request.
   path: Assets/Level 2/Animations/New Snakes.png
   artifactKey: Guid(4547d099fd59ccc49899f106bf870fac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
 Start importing Assets/Level 2/Animations/New Snakes.png using Guid(4547d099fd59ccc49899f106bf870fac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f858d9a2c31e5d10cac7ff78551775b6') in 0.026477 seconds 
+=======
+  Time since last request: 18018.506486 seconds.
+  path: Assets/Deserto/Bar.png
+  artifactKey: Guid(f963fe112c1ca3342a3cd27c230b4448) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Deserto/Bar.png using Guid(f963fe112c1ca3342a3cd27c230b4448) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'af942c8dcc5ac888ebb3cdbb6c346583') in 0.581060 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000051 seconds.
+  path: Assets/Deserto/bulletLoaded.png
+  artifactKey: Guid(49be7f7d72ca04b4cb1776d80b869101) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Deserto/bulletLoaded.png using Guid(49be7f7d72ca04b4cb1776d80b869101) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9be3dfff47c807de1efe6f4fd41ab328') in 0.015834 seconds 
+>>>>>>> Stashed changes
 Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
 AssetImportWorker is now disconnected from the server
 Process exiting
