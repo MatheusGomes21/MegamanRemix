@@ -32,7 +32,7 @@ public class cactoReserva : MonoBehaviour
     void Update()
     {
         //patrol
-        transform.position += new Vector3(speed, 0, 0) * Time.deltaTime;
+        transform.position += new Vector3(0, 0, 0) * Time.deltaTime;
         movement += Mathf.Abs(speed / 250);
 
         if (movement > 3)

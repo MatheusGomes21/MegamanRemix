@@ -29,7 +29,7 @@ public class Patrulhamento : MonoBehaviour
         }*/
         if (right)
         {
-            transform.position += new Vector3(0.5f, 0, 0); // Se está indo para a direita, adiciona à posição no eixo X
+            transform.position += new Vector3(0.005f, 0, 0); // Se está indo para a direita, adiciona à posição no eixo X
             if (transform.position.x > limiteDir)
             {
                 // Se atingir o limite direito, inverte a direção e vira o objeto 180 graus
@@ -40,7 +40,7 @@ public class Patrulhamento : MonoBehaviour
         else
         {
             // Se está indo para a esquerda, subtrai da posição no eixo X
-            transform.position -= new Vector3(0.5f, 0, 0);
+            transform.position -= new Vector3(0.005f, 0, 0);
             if (transform.position.x < limiteEsq)
             {
                 // Se atingir o limite esquerdo, inverte a direção e vira o objeto 0 grau (voltando à posição inicial)
