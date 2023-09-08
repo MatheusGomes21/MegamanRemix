@@ -59,6 +59,7 @@ public class cacto : MonoBehaviour
     IEnumerator Death()
     {
         animator.SetBool("Dead", true);
+        gameObject.GetComponent<PolygonCollider2D>().enabled = false;
         yield return new WaitForSeconds(2);
         Destroy(gameObject);
     }

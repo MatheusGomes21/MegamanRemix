@@ -90,10 +90,5 @@ public class cobra : MonoBehaviour
         {
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         }
-
-        if (collider.gameObject.name == "AreiaMovedica")
-        {
-            Destroy(gameObject);
-        }
     }
 }
