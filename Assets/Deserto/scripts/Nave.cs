@@ -7,9 +7,80 @@ public class Nave : MonoBehaviour
     GameObject player;
 
     //stats
-    public float speed = 2;
-    public float movement;
-    bool right = true;
+    public float aimSpeedX;
+    public float aimSpeedY;
+    public float cooldown;
+    string stage = "waiting";
+
+    float playerX;
+    float playerY;
+
+    //functions
+    IEnumerator Wait()
+    {
+        transform.position = new Vector3(playerX - 1, playerY + 4.7f, 0);
+        yield return new WaitForSeconds(cooldown);
+        stage = "aiming";
+    }
+
+    void Travel(Vector3 position, Vector3 scale)
+    {
+        //position
+
+        if (transform.position.x < position.x)
+        {
+            transform.position += new Vector3(aimSpeedX, 0, 0) * Time.deltaTime;
+        }
+
+        if (transform.position.x > position.x)
+        {
+            transform.position -= new Vector3(aimSpeedX, 0, 0) * Time.deltaTime;
+        }
+
+        if (transform.position.y < position.y)
+        {
+            transform.position += new Vector3(0, aimSpeedY, 0) * Time.deltaTime;
+        }
+
+        if (transform.position.y > position.y)
+        {
+            transform.position -= new Vector3(0, aimSpeedY, 0) * Time.deltaTime;
+        }
+
+        //scale
+        if (transform.localScale.x < scale.x)
+        {
+            transform.localScale += new Vector3(aimSpeedX, 0, 0) * Time.deltaTime;
+        }
+
+        if (transform.localScale.x > scale.x)
+        {
+            transform.localScale -= new Vector3(aimSpeedX, 0, 0) * Time.deltaTime;
+        }
+
+        if (transform.localScale.y < scale.y)
+        {
+            transform.localScale += new Vector3(0, aimSpeedY, 0) * Time.deltaTime;
+        }
+
+        if (transform.localScale.y > scale.y)
+        {
+            transform.localScale -= new Vector3(0, aimSpeedY, 0) * Time.deltaTime;
+        }
+
+        if (transform.position == position && transform.localScale == scale)
+        {
+            if (stage == "aiming")
+            {
+                stage = "charging";
+            }
+
+            else
+            {
+                stage = "waiting";
+            }
+        }
+    }
 
     // Start is called before the first frame update
     void Start()
@@ -20,35 +91,17 @@ public class Nave : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //transform.position = player.transform.position + new Vector3(-1, 4, 0);
-
-        //transform.position += new Vector3(speed, 0, 0) * Time.deltaTime;
-        //movement += Mathf.Abs(speed / 250);
-
-        //if (movement > 3)
-        //{
-        //    movement = 0;
-        //    speed *= -1;
-        //    transform.localScale = Vector3.Scale(transform.localScale, new Vector3(-1, 1, 1));
-        //}
-
-        if (right)
+        playerX = player.transform.position.x;
+        playerY = player.transform.position.y;
+        
+        if (stage == "waiting")
         {
-            transform.position += new Vector3(0.003f, 0, 0);
-            if (transform.position.x > player.transform.position.x)
-            {
-                right = false;
-                transform.rotation = Quaternion.Euler(0, 0, 0);
-            }
+            StartCoroutine(Wait());
         }
-        else
+
+        if (stage == "aiming")
         {
-            transform.position -= new Vector3(0.003f, 0, 0);
-            if (transform.position.x < player.transform.position.y)
-            {
-                right = true;
-                transform.rotation = Quaternion.Euler(0, 180, 0);
-            }
+            Travel(new Vector3(playerX, playerY + 3, 0), new Vector3(5, 5, 0));
         }
     }
 }
