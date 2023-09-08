@@ -6,6 +6,7 @@ public class Mira : MonoBehaviour
 {
     public Animator animator;
     public Animator fxAnimator;
+    public Municao municao;
     GameObject tiroFx;
     GameObject enemy;
     Camera camera;
@@ -35,17 +36,27 @@ public class Mira : MonoBehaviour
 
         //spin
         transform.rotation = Quaternion.Euler(new Vector3(0, 0, rotation));
-        rotation += 0.2f;
+        
+        if (municao.recarregando == false)
+        {
+            rotation += 0.2f;
+        }
 
+        else
+        {
+            rotation += 0.8f;
+        }
+
+        //atirar
         animator.SetBool("Errou", false);
         animator.SetBool("Acertou", false);
 
-        if (Input.GetButtonDown("Fire1"))
+        if (Input.GetButtonDown("Fire1") && municao.cargas >= -1 && municao.recarregando == false)
         {
             animator.SetBool(animacao, true);
             fxAnimator.SetBool("Pow", true);
 
-            Destroy(enemy);
+            enemy.tag = "Dead";
         }
 
         else

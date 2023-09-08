@@ -6,10 +6,12 @@ using UnityEngine.SceneManagement;
 public class cacto : MonoBehaviour
 {
     //stats
-    public float range = 10;
-    public int waitTime = 2000;
-    public float patrolSize = 3;
-    int wait = 500;
+    public float range;
+    public int waitTime;
+    public float patrolSize;
+    public float speed;
+    float movement;
+    
 
 
     //game Objects
@@ -20,43 +22,11 @@ public class cacto : MonoBehaviour
     Animator animator;
 
 
-    // Start is called before the first frame update
-    void Start()
+    //functions
+    bool shooting = false;
+    IEnumerator Shoot()
     {
-        player = GameObject.Find("Cowboy");
-        bullet = GameObject.Find("TiroCacto");
-        animator = gameObject.GetComponent<Animator>();
-    }
-
-    float movement;
-    public float speed = 0.6f;
-
-    // Update is called once per frame
-    void Update()
-    {
-        //patrol
-        transform.position += new Vector3(speed, 0, 0) * Time.deltaTime;
-        movement += Mathf.Abs(speed / 250);
-
-        if (movement > patrolSize)
-        {
-            movement = 0;
-            speed *= -1;
-            transform.localScale = Vector3.Scale(transform.localScale, new Vector3(-1, 1, 1));
-        }
-
-        //shoot
-        if (wait < waitTime)
-        {
-            if(wait > 50)
-            {
-                animator.SetBool("Shooting", false);
-            }
-  
-            wait += 1;
-        }
-
-        if (transform.position.x - player.transform.position.x < range && wait >= waitTime)
+        if (transform.position.x - player.transform.position.x < range && shooting == false)
         {
             float spawnpointX = 0;
 
@@ -78,9 +48,54 @@ public class cacto : MonoBehaviour
 
             animator.SetBool("Shooting", true);
             Instantiate(bullet, new Vector3(spawnpointX, transform.position.y, 0), transform.rotation);
+            shooting = true;
+            yield return new WaitForSeconds(0.1f);
+            animator.SetBool("Shooting", false);
+            yield return new WaitForSeconds(waitTime);
+            shooting = false;
+        }
+    }
 
-            wait = 0;
-            
+    IEnumerator Death()
+    {
+        animator.SetBool("Dead", true);
+        gameObject.GetComponent<PolygonCollider2D>().enabled = false;
+        yield return new WaitForSeconds(2);
+        Destroy(gameObject);
+    }
+
+    // Start is called before the first frame update
+    void Start()
+    {
+        player = GameObject.Find("Cowboy");
+        bullet = GameObject.Find("TiroCacto");
+        animator = gameObject.GetComponent<Animator>();
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        //patrol
+        transform.position += new Vector3(speed, 0, 0) * Time.deltaTime;
+        movement += Mathf.Abs(speed / 250);
+
+        if (movement > patrolSize)
+        {
+            movement = 0;
+            speed *= -1;
+            transform.localScale = Vector3.Scale(transform.localScale, new Vector3(-1, 1, 1));
+        }
+
+        //shoot
+        
+        {
+            StartCoroutine(Shoot());
+        }
+
+        //death
+        if (gameObject.tag == "Dead")
+        {
+            StartCoroutine(Death());
         }
     }
 
@@ -91,10 +106,5 @@ public class cacto : MonoBehaviour
         {
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         }
-    }
-
-    void OnParticleCollision(GameObject other)
-    {
-        Destroy(gameObject);
     }
 }
