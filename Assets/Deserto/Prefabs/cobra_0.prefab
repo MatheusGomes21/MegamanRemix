@@ -12,8 +12,8 @@ GameObject:
   - component: {fileID: 2196682742790219941}
   - component: {fileID: 2196682742790219940}
   - component: {fileID: 2196682742790219963}
-  - component: {fileID: 2691628684081143516}
   - component: {fileID: 1085379989995425968}
+  - component: {fileID: 2691628684081143516}
   m_Layer: 0
   m_Name: cobra_0
   m_TagString: Enemy
@@ -142,22 +142,6 @@ PolygonCollider2D:
       - {x: 0.65625, y: -0.125}
       - {x: 0.65625, y: 0.0625}
       - {x: 0.53125, y: 0.25}
---- !u!114 &2691628684081143516
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2196682742790219937}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 432f6d01f562be34b9eee4e787875622, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 1
-  patrolSize: 1.2
-  range: 5
-  speedBoost: 1.6
 --- !u!50 &1085379989995425968
 Rigidbody2D:
   serializedVersion: 4
@@ -179,3 +163,19 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &2691628684081143516
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2196682742790219937}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 432f6d01f562be34b9eee4e787875622, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 1
+  patrolSize: 1.2
+  range: 5
+  speedBoost: 1.6
