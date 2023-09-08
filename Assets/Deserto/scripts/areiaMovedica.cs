@@ -23,5 +23,10 @@ public class areiaMovedica : MonoBehaviour
         {
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         }
+
+        if (collider.gameObject.name == "Cobra")
+        {
+            Destroy(collider.gameObject);
+        }
     }
 }

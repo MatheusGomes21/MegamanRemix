@@ -6,12 +6,14 @@ public class Municao : MonoBehaviour
 {
     public List<GameObject> recargas;
     public int cargas = 5;
+    public bool recarregando = false;
     GameObject mira;
 
     //funcao recarregar
     IEnumerator Recarregar()
     {
         mira.GetComponent<Animator>().SetBool("Recarregando", true);
+        recarregando = true;
         for (int i = 0; i <= 5; i++)
         {
             yield return new WaitForSeconds(0.33f);
@@ -22,6 +24,7 @@ public class Municao : MonoBehaviour
             }
         }
         mira.GetComponent<Animator>().SetBool("Recarregando", false);
+        recarregando = false;
     }
 
     // Start is called before the first frame update
