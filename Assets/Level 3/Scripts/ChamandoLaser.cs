@@ -12,7 +12,7 @@ public class ChamandoLaser : MonoBehaviour
         TempoLaser = TempoLaser + Time.deltaTime;
         if (TempoLaser > 5)
         {
-            Instantiate(laser, transform.position, Quaternion.Euler(0, 0, 360));
+            Instantiate(laser, transform.position, Quaternion.identity);
             TempoLaser = 0;
         }
     }
