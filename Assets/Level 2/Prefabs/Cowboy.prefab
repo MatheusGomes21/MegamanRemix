@@ -562,6 +562,7 @@ MonoBehaviour:
   - {fileID: 2815184091964701063}
   - {fileID: 2815184092766837518}
   cargas: 5
+  recarregando: 0
 --- !u!1 &3071146000613197973
 GameObject:
   m_ObjectHideFlags: 0
@@ -695,7 +696,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3071146001538158113}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.483, y: 0.455, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 2, y: 2, z: -5.5478506}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -789,6 +790,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animator: {fileID: 3071146001538158140}
   fxAnimator: {fileID: 3071146000613197975}
+  municao: {fileID: 2815184093391333407}
 --- !u!58 &3071146001538158142
 CircleCollider2D:
   m_ObjectHideFlags: 0
