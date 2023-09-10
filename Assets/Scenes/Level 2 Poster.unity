@@ -1626,7 +1626,7 @@ PrefabInstance:
     - target: {fileID: 3047421130272798040, guid: 5e478c3643894324f9f5f3f53f773f6e,
         type: 3}
       propertyPath: patrolSize
-      value: 0.5
+      value: 0.8
       objectReference: {fileID: 0}
     - target: {fileID: 3047421130272798041, guid: 5e478c3643894324f9f5f3f53f773f6e,
         type: 3}
@@ -1636,7 +1636,7 @@ PrefabInstance:
     - target: {fileID: 3047421130272798041, guid: 5e478c3643894324f9f5f3f53f773f6e,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 195.37
+      value: 194.39
       objectReference: {fileID: 0}
     - target: {fileID: 3047421130272798041, guid: 5e478c3643894324f9f5f3f53f773f6e,
         type: 3}
