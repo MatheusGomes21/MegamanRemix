@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 7898205307739646011}
   - component: {fileID: 7898205307739646008}
   m_Layer: 0
-  m_Name: AreiaFront
+  m_Name: AreiaFrontCentroBaixo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -26,12 +26,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7898205307739646014}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 81.5, y: -28.2, z: 32.39}
+  m_LocalScale: {x: 2.462601, y: 1.9877214, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 7898205308300728528}
-  m_RootOrder: 0
+  m_Father: {fileID: 7898205308746336414}
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &7898205307739646011
 SpriteRenderer:
@@ -101,6 +101,7 @@ MonoBehaviour:
   speed: 0.1
   layer: 1
   selfY: -11
+  movingTrainValue: 0
 --- !u!1 &7898205307877631593
 GameObject:
   m_ObjectHideFlags: 0
@@ -113,7 +114,7 @@ GameObject:
   - component: {fileID: 7898205307877631594}
   - component: {fileID: 7898205307877631595}
   m_Layer: 0
-  m_Name: AtreiaBg
+  m_Name: AtreiaBgCentroBaixo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -127,12 +128,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7898205307877631593}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 1}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 81.5, y: -28.2, z: 33.39}
+  m_LocalScale: {x: 2.462601, y: 1.9877214, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 7898205308300728528}
-  m_RootOrder: 1
+  m_Father: {fileID: 7898205308746336414}
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &7898205307877631594
 SpriteRenderer:
@@ -202,39 +203,7 @@ MonoBehaviour:
   speed: 0.05
   layer: 2
   selfY: -9
---- !u!1 &7898205308300728529
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 7898205308300728528}
-  m_Layer: 0
-  m_Name: CentroBaixo
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &7898205308300728528
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7898205308300728529}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 81.5, y: -28.2, z: 32.39}
-  m_LocalScale: {x: 2.462601, y: 1.9877214, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 7898205307739646009}
-  - {fileID: 7898205307877631592}
-  m_Father: {fileID: 7898205308746336414}
-  m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  movingTrainValue: 0
 --- !u!1 &7898205308330128471
 GameObject:
   m_ObjectHideFlags: 0
@@ -247,7 +216,7 @@ GameObject:
   - component: {fileID: 7898205308330128464}
   - component: {fileID: 7898205308330128465}
   m_Layer: 0
-  m_Name: AreiaFront
+  m_Name: AreiaFrontCentro
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -261,11 +230,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7898205308330128471}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 81.5, y: -24.8, z: 32.39}
+  m_LocalScale: {x: 2.462601, y: 1.9877214, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 7898205309295659411}
+  m_Father: {fileID: 7898205308746336414}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &7898205308330128464
@@ -336,6 +305,7 @@ MonoBehaviour:
   speed: 0.1
   layer: 3
   selfY: -6
+  movingTrainValue: 0
 --- !u!1 &7898205308420403907
 GameObject:
   m_ObjectHideFlags: 0
@@ -348,7 +318,7 @@ GameObject:
   - component: {fileID: 7898205308420403772}
   - component: {fileID: 7898205308420403773}
   m_Layer: 0
-  m_Name: AtreiaBg
+  m_Name: AtreiaBgCentro
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -362,11 +332,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7898205308420403907}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 1}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 81.5, y: -24.8, z: 33.39}
+  m_LocalScale: {x: 2.462601, y: 1.9877214, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 7898205309295659411}
+  m_Father: {fileID: 7898205308746336414}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &7898205308420403772
@@ -437,6 +407,7 @@ MonoBehaviour:
   speed: 0.05
   layer: 4
   selfY: -4.5
+  movingTrainValue: 0
 --- !u!1 &7898205308746336415
 GameObject:
   m_ObjectHideFlags: 0
@@ -465,45 +436,16 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 7898205309295659411}
-  - {fileID: 7898205309103368745}
-  - {fileID: 7898205308300728528}
-  - {fileID: 7898205309486858624}
-  m_Father: {fileID: 0}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &7898205309103368748
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 7898205309103368745}
-  m_Layer: 0
-  m_Name: Direita
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &7898205309103368745
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7898205309103368748}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 99.6, y: -24.8, z: 38.32}
-  m_LocalScale: {x: 2.462601, y: 1.9877214, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
+  - {fileID: 7898205308330128470}
+  - {fileID: 7898205308420403906}
   - {fileID: 7898205309460165148}
   - {fileID: 7898205309570518932}
-  m_Father: {fileID: 7898205308746336414}
-  m_RootOrder: 1
+  - {fileID: 7898205307739646009}
+  - {fileID: 7898205307877631592}
+  - {fileID: 7898205309225285637}
+  - {fileID: 7898205309119629426}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &7898205309119629427
 GameObject:
@@ -517,7 +459,7 @@ GameObject:
   - component: {fileID: 7898205309119629420}
   - component: {fileID: 7898205309119629421}
   m_Layer: 0
-  m_Name: AtreiaBg
+  m_Name: AtreiaBgDirBaixo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -531,12 +473,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7898205309119629427}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 1}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 99.6, y: -28.2, z: 39.32}
+  m_LocalScale: {x: 2.462601, y: 1.9877214, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 7898205309486858624}
-  m_RootOrder: 1
+  m_Father: {fileID: 7898205308746336414}
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &7898205309119629420
 SpriteRenderer:
@@ -606,6 +548,7 @@ MonoBehaviour:
   speed: 0.05
   layer: 2
   selfY: -9
+  movingTrainValue: 0
 --- !u!1 &7898205309225285642
 GameObject:
   m_ObjectHideFlags: 0
@@ -618,7 +561,7 @@ GameObject:
   - component: {fileID: 7898205309225285639}
   - component: {fileID: 7898205309225285636}
   m_Layer: 0
-  m_Name: AreiaFront
+  m_Name: AreiaFrontDirBaixo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -632,12 +575,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7898205309225285642}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 99.6, y: -28.2, z: 38.32}
+  m_LocalScale: {x: 2.462601, y: 1.9877214, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 7898205309486858624}
-  m_RootOrder: 0
+  m_Father: {fileID: 7898205308746336414}
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &7898205309225285639
 SpriteRenderer:
@@ -707,39 +650,7 @@ MonoBehaviour:
   speed: 0.1
   layer: 1
   selfY: -11
---- !u!1 &7898205309295659408
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 7898205309295659411}
-  m_Layer: 0
-  m_Name: Centro
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &7898205309295659411
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7898205309295659408}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 81.5, y: -24.8, z: 32.39}
-  m_LocalScale: {x: 2.462601, y: 1.9877214, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 7898205308330128470}
-  - {fileID: 7898205308420403906}
-  m_Father: {fileID: 7898205308746336414}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  movingTrainValue: 0
 --- !u!1 &7898205309460165149
 GameObject:
   m_ObjectHideFlags: 0
@@ -752,7 +663,7 @@ GameObject:
   - component: {fileID: 7898205309460165150}
   - component: {fileID: 7898205309460165151}
   m_Layer: 0
-  m_Name: AreiaFront
+  m_Name: AreiaFrontDir
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -766,12 +677,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7898205309460165149}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 99.6, y: -24.8, z: 38.32}
+  m_LocalScale: {x: 2.462601, y: 1.9877214, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 7898205309103368745}
-  m_RootOrder: 0
+  m_Father: {fileID: 7898205308746336414}
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &7898205309460165150
 SpriteRenderer:
@@ -841,39 +752,7 @@ MonoBehaviour:
   speed: 0.1
   layer: 3
   selfY: -6
---- !u!1 &7898205309486858625
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 7898205309486858624}
-  m_Layer: 0
-  m_Name: DireitaBaixo
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &7898205309486858624
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7898205309486858625}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 99.6, y: -28.2, z: 38.32}
-  m_LocalScale: {x: 2.462601, y: 1.9877214, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 7898205309225285637}
-  - {fileID: 7898205309119629426}
-  m_Father: {fileID: 7898205308746336414}
-  m_RootOrder: 3
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  movingTrainValue: 0
 --- !u!1 &7898205309570518933
 GameObject:
   m_ObjectHideFlags: 0
@@ -886,7 +765,7 @@ GameObject:
   - component: {fileID: 7898205309570518934}
   - component: {fileID: 7898205309570518935}
   m_Layer: 0
-  m_Name: AtreiaBg
+  m_Name: AtreiaBgDir
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -900,12 +779,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7898205309570518933}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 1}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 99.6, y: -24.8, z: 39.32}
+  m_LocalScale: {x: 2.462601, y: 1.9877214, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 7898205309103368745}
-  m_RootOrder: 1
+  m_Father: {fileID: 7898205308746336414}
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &7898205309570518934
 SpriteRenderer:
@@ -975,3 +854,4 @@ MonoBehaviour:
   speed: 0.05
   layer: 4
   selfY: -4.5
+  movingTrainValue: 0

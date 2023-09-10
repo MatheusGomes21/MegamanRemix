@@ -10,6 +10,7 @@ public class cacto : MonoBehaviour
     public int waitTime;
     public float patrolSize;
     public float speed;
+    public string modo = "d boa";
     float movement;
     
 
@@ -28,6 +29,7 @@ public class cacto : MonoBehaviour
     {
         if (transform.position.x - player.transform.position.x < range && shooting == false)
         {
+            modo = "bolado";
             float spawnpointX = 0;
 
             if (transform.position.x > player.transform.position.x)

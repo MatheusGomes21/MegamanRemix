@@ -30347,12 +30347,12 @@ PrefabInstance:
     - target: {fileID: 6729610209538854697, guid: d39e7c62d7ea14f4297bd94d34b2b249,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -6.81
+      value: -7.18
       objectReference: {fileID: 0}
     - target: {fileID: 6729610209538854697, guid: d39e7c62d7ea14f4297bd94d34b2b249,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.66
+      value: -0.76
       objectReference: {fileID: 0}
     - target: {fileID: 6729610209538854697, guid: d39e7c62d7ea14f4297bd94d34b2b249,
         type: 3}
@@ -30627,6 +30627,26 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 999623444}
     m_Modifications:
+    - target: {fileID: 7898205307739646014, guid: 494c8cbe1dc67e24090341909c6c7e69,
+        type: 3}
+      propertyPath: m_Name
+      value: AreiaFrontCentroBaixo
+      objectReference: {fileID: 0}
+    - target: {fileID: 7898205307877631593, guid: 494c8cbe1dc67e24090341909c6c7e69,
+        type: 3}
+      propertyPath: m_Name
+      value: AtreiaBgCentroBaixo
+      objectReference: {fileID: 0}
+    - target: {fileID: 7898205308330128471, guid: 494c8cbe1dc67e24090341909c6c7e69,
+        type: 3}
+      propertyPath: m_Name
+      value: AreiaFrontCentro
+      objectReference: {fileID: 0}
+    - target: {fileID: 7898205308420403907, guid: 494c8cbe1dc67e24090341909c6c7e69,
+        type: 3}
+      propertyPath: m_Name
+      value: AtreiaBgCentro
+      objectReference: {fileID: 0}
     - target: {fileID: 7898205308746336414, guid: 494c8cbe1dc67e24090341909c6c7e69,
         type: 3}
       propertyPath: m_RootOrder
@@ -30686,6 +30706,26 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Dunas
+      objectReference: {fileID: 0}
+    - target: {fileID: 7898205309119629427, guid: 494c8cbe1dc67e24090341909c6c7e69,
+        type: 3}
+      propertyPath: m_Name
+      value: AtreiaBgDirBaixo
+      objectReference: {fileID: 0}
+    - target: {fileID: 7898205309225285642, guid: 494c8cbe1dc67e24090341909c6c7e69,
+        type: 3}
+      propertyPath: m_Name
+      value: AreiaFrontDirBaixo
+      objectReference: {fileID: 0}
+    - target: {fileID: 7898205309460165149, guid: 494c8cbe1dc67e24090341909c6c7e69,
+        type: 3}
+      propertyPath: m_Name
+      value: AreiaFrontDir
+      objectReference: {fileID: 0}
+    - target: {fileID: 7898205309570518933, guid: 494c8cbe1dc67e24090341909c6c7e69,
+        type: 3}
+      propertyPath: m_Name
+      value: AtreiaBgDir
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 494c8cbe1dc67e24090341909c6c7e69, type: 3}
