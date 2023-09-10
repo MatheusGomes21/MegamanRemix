@@ -20,24 +20,22 @@ public class cartaz : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        MonoBehaviour.print(camera.transform.position.x + 86.7f);
-        MonoBehaviour.print(camera.transform.position.y - 22.63f);
-        if (transform.position.x < camera.transform.position.x + 86.7f)
+        if (transform.position.x < camera.transform.position.x)
         {
             transform.position += new Vector3(speedX, 0, 0) * Time.deltaTime;
         }
 
-        if (transform.position.x > camera.transform.position.x + 86.7f)
+        if (transform.position.x > camera.transform.position.x)
         {
             transform.position -= new Vector3(speedX, 0, 0) * Time.deltaTime;
         }
 
-        if (transform.position.y < (camera.transform.position.y - 22.63f))
+        if (transform.position.y < (camera.transform.position.y + 3.17f))
         {
             transform.position += new Vector3(0, speedY, 0) * Time.deltaTime;
         }
 
-        if (transform.position.y > (camera.transform.position.y - 22.63f))
+        if (transform.position.y > (camera.transform.position.y + 3.17f))
         {
             transform.position -= new Vector3(0, speedY, 0) * Time.deltaTime;
         }
