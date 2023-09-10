@@ -59,7 +59,7 @@ public class cartaz : MonoBehaviour
                 transform.position -= new Vector3(0, speedY, 0) * Time.deltaTime;
             }
 
-            if (transform.localScale.x < 35.5)
+            if (transform.localScale.x  < 35.5)
             {
                 transform.localScale += new Vector3(growthX, growthY, 0) * Time.deltaTime;
             }
