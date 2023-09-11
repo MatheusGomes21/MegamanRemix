@@ -126,8 +126,8 @@ GameObject:
   - component: {fileID: 3004333551158352968}
   - component: {fileID: 3004333551158352971}
   - component: {fileID: 3004333551158352980}
-  - component: {fileID: 3004333551158352970}
   - component: {fileID: 178597142110515044}
+  - component: {fileID: 3004333551158352970}
   - component: {fileID: 4605552825414405417}
   m_Layer: 0
   m_Name: Cacto 1
@@ -265,23 +265,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
---- !u!114 &3004333551158352970
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3004333551158352975}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0e7ec4c52f3d07147a92c5669ada64c9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  range: 10
-  waitTime: 4
-  patrolSize: 1.5
-  speed: 0.6
-  modo: d boa
 --- !u!50 &178597142110515044
 Rigidbody2D:
   serializedVersion: 4
@@ -303,6 +286,23 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &3004333551158352970
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3004333551158352975}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0e7ec4c52f3d07147a92c5669ada64c9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  range: 10
+  waitTime: 4
+  patrolSize: 1.5
+  speed: 0.6
+  modo: d boa
 --- !u!114 &4605552825414405417
 MonoBehaviour:
   m_ObjectHideFlags: 0

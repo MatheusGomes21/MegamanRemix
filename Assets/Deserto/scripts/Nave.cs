@@ -135,6 +135,7 @@ public class Nave : MonoBehaviour
         {
             if (stage == "aiming")
             {
+                MonoBehaviour.print("a");
                 naveAnimator.SetBool("Piscando", true);
                 yield return new WaitForSeconds(7);
                 stage = "shooting";
