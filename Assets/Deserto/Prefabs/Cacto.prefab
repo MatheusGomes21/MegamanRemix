@@ -12,8 +12,9 @@ GameObject:
   - component: {fileID: 6709932508315088484}
   - component: {fileID: 6709932508315088487}
   - component: {fileID: 6709932508315088504}
-  - component: {fileID: 6709932508315088486}
   - component: {fileID: 8562873709009175880}
+  - component: {fileID: 6709932508315088486}
+  - component: {fileID: 8727305981815038409}
   m_Layer: 0
   m_Name: Cacto
   m_TagString: Enemy
@@ -150,22 +151,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
---- !u!114 &6709932508315088486
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6709932508315088483}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0e7ec4c52f3d07147a92c5669ada64c9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  range: 10
-  waitTime: 4
-  patrolSize: 1.5
-  speed: 0.6
 --- !u!50 &8562873709009175880
 Rigidbody2D:
   serializedVersion: 4
@@ -187,6 +172,35 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &6709932508315088486
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6709932508315088483}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0e7ec4c52f3d07147a92c5669ada64c9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  range: 10
+  waitTime: 4
+  patrolSize: 1.5
+  speed: 0.6
+  modo: d boa
+--- !u!114 &8727305981815038409
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6709932508315088483}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3619bb46086fdc348a917063726ae13a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &8562873709206686037
 GameObject:
   m_ObjectHideFlags: 0

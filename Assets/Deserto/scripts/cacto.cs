@@ -27,39 +27,37 @@ public class cacto : MonoBehaviour
     bool shooting = false;
     IEnumerator Shoot()
     {
-        if (transform.position.x - player.transform.position.x < range && shooting == false)
+        modo = "bolado";
+        float spawnpointX = 0;
+
+        if (transform.position.x > player.transform.position.x)
         {
-            modo = "bolado";
-            float spawnpointX = 0;
-
-            if (transform.position.x > player.transform.position.x)
-            {
-                spawnpointX = -1;
-                transform.localScale = new Vector3(1, 1, 1);
-                bullet.transform.localScale = new Vector3(-1, 1, 1);
-            }
-
-            if (transform.position.x < player.transform.position.x)
-            {
-                spawnpointX = 1;
-                transform.localScale = new Vector3(-1, 1, 1);
-                bullet.transform.localScale = new Vector3(1, 1, 1);
-            }
-
-            spawnpointX = transform.position.x + spawnpointX;
-
-            animator.SetBool("Shooting", true);
-            Instantiate(bullet, new Vector3(spawnpointX, transform.position.y, 0), transform.rotation);
-            shooting = true;
-            yield return new WaitForSeconds(0.1f);
-            animator.SetBool("Shooting", false);
-            yield return new WaitForSeconds(waitTime);
-            shooting = false;
+            spawnpointX = -1;
+            transform.localScale = new Vector3(1, 1, 1);
+            bullet.transform.localScale = new Vector3(-1, 1, 1);
         }
+
+        if (transform.position.x < player.transform.position.x)
+        {
+            spawnpointX = 1;
+            transform.localScale = new Vector3(-1, 1, 1);
+            bullet.transform.localScale = new Vector3(1, 1, 1);
+        }
+
+        spawnpointX = transform.position.x + spawnpointX;
+
+        animator.SetBool("Shooting", true);
+        Instantiate(bullet, new Vector3(spawnpointX, transform.position.y, 0), transform.rotation);
+        shooting = true;
+        yield return new WaitForSeconds(0.1f);
+        animator.SetBool("Shooting", false);
+        yield return new WaitForSeconds(waitTime);
+        shooting = false;
     }
 
     IEnumerator Death()
     {
+        shooting = true;
         animator.SetBool("Dead", true);
         gameObject.GetComponent<PolygonCollider2D>().enabled = false;
         yield return new WaitForSeconds(2);
@@ -90,6 +88,12 @@ public class cacto : MonoBehaviour
 
         //shoot
         
+        if (transform.position.x > player.transform.position.x && (transform.position.x - player.transform.position.x) < range && shooting == false)
+        {
+            StartCoroutine(Shoot());
+        }
+
+        if (transform.position.x < player.transform.position.x && (player.transform.position.x - transform.position.x) < range && shooting == false)
         {
             StartCoroutine(Shoot());
         }
