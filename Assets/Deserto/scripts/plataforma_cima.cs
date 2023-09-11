@@ -13,12 +13,12 @@ public class plataforma_cima : MonoBehaviour
     }
 
     float movement;
-    float speed = 0.002f;
+    public float speed;
 
     // Update is called once per frame
     void Update()
     {
-        transform.position += new Vector3(0, speed, 0);
+        transform.position += new Vector3(0, speed, 0) * Time.deltaTime;
         movement += Mathf.Abs(speed);
 
         if(movement > 1.5f)
