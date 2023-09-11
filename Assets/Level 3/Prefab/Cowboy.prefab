@@ -133,7 +133,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 222414573924997931}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.483, y: 0.455, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 2, y: 2, z: -5.5478506}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -227,6 +227,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animator: {fileID: 222414573924997942}
   fxAnimator: {fileID: 222414573247471005}
+  municao: {fileID: 0}
 --- !u!58 &222414573924997940
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -637,6 +638,7 @@ MonoBehaviour:
   - {fileID: 1051943319023824013}
   - {fileID: 1051943320899735044}
   cargas: 5
+  recarregando: 0
 --- !u!1 &1051943320795152881
 GameObject:
   m_ObjectHideFlags: 0
@@ -10530,14 +10532,12 @@ GameObject:
   - component: {fileID: 8380500579069320771}
   - component: {fileID: 8358740231619745049}
   - component: {fileID: 8480099455298193041}
-  - component: {fileID: 8461088464265304619}
   - component: {fileID: 8360219156493518185}
-  - component: {fileID: 8429675647018760323}
   - component: {fileID: 222414572277442593}
   - component: {fileID: 2992866132821830524}
   - component: {fileID: 2992866132821830525}
   m_Layer: 2
-  m_Name: CowboyEspacial
+  m_Name: Cowboy
   m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -10670,22 +10670,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
---- !u!114 &8461088464265304619
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8429375594180524921}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 61782caa48f696d458c95daa6e99c7e8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  anima: {fileID: 8480099455298193041}
-  rdb: {fileID: 8380500579069320771}
-  fire: {fileID: 8520360843332026829}
-  animator: {fileID: 0}
 --- !u!70 &8360219156493518185
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -10702,20 +10686,6 @@ CapsuleCollider2D:
   m_Offset: {x: 0, y: 0}
   m_Size: {x: 0.91, y: 1.48}
   m_Direction: 0
---- !u!114 &8429675647018760323
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8429375594180524921}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ce472e0c62092944c80055daec9bc65b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  jumpForce: 3
-  animator: {fileID: 8480099455298193041}
 --- !u!114 &222414572277442593
 MonoBehaviour:
   m_ObjectHideFlags: 0
