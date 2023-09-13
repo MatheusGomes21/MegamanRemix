@@ -13,6 +13,8 @@ public class ControlEspacial : MonoBehaviour
     public Animator animator;
 
 
+
+
     int bullets;
     int maxBullets = 3;
     GameObject bullet;
@@ -178,4 +180,3 @@ public class ControlEspacial : MonoBehaviour
         }
     }
 }
-

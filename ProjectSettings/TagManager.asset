@@ -11,6 +11,7 @@ TagManager:
   - Estrela
   - Template
   - Dead
+  - Checkpoint
   layers:
   - Default
   - TransparentFX
