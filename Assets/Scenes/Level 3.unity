@@ -19250,8 +19250,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   alturaInicial: 4.39
   alturaMaxima: 30.93
-  velocidadeSubida: 1
-  velocidadeDescida: 1
+  velocidadeSubida: 3
+  velocidadeDescida: 3
   tempoDeEspera: 5
 --- !u!60 &488710160
 PolygonCollider2D:
