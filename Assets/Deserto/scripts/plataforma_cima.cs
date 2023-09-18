@@ -23,7 +23,7 @@ public class plataforma_cima : MonoBehaviour
 
         if(movement > 1.5f)
         {
-            movement = 0;
+            movement = 1;
             speed *= -1;
             transform.localScale = Vector3.Scale(transform.localScale, new Vector3(-1, 1, 1));
         }

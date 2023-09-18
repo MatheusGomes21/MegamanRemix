@@ -19250,8 +19250,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   alturaInicial: 4.39
   alturaMaxima: 30.93
-  velocidadeSubida: 1
-  velocidadeDescida: 1
+  velocidadeSubida: 2
+  velocidadeDescida: 2
   tempoDeEspera: 5
 --- !u!60 &488710160
 PolygonCollider2D:
@@ -61873,8 +61873,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2070016019}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 115.20014, y: 7.598131, z: 2.0633085}
-  m_LocalScale: {x: 3, y: 3, z: 4.1538}
+  m_LocalPosition: {x: 115.3103, y: 7.7083, z: 2.0633085}
+  m_LocalScale: {x: 3.1101, y: 3.1101, z: 4.3062444}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1207781448}
