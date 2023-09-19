@@ -33,7 +33,6 @@ design
 -tnt não explode (agora tem animação da explosão) - C1
 
 animações
--animações do fabiano estão rapidas demais - M2
 
 bugs
 -fabiano desaparece ao colocar a mira em cima dele no começo da segunda fase
