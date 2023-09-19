@@ -10,7 +10,6 @@ GameObject:
   m_Component:
   - component: {fileID: 6944075971689502940}
   - component: {fileID: 6944075971689502941}
-  - component: {fileID: 6944075971689502939}
   m_Layer: 2
   m_Name: Colisao
   m_TagString: Untagged
@@ -59,15 +58,3 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 2.17, y: 0.07}
   m_EdgeRadius: 0
---- !u!114 &6944075971689502939
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6944075971689502943}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1118f7bd76aeece4e80e6a98ebb77cb0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 

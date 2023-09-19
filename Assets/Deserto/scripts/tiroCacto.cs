@@ -36,19 +36,4 @@ public class tiroCacto : MonoBehaviour
 
         transform.position += new Vector3(speed * direction, 0, 0) * Time.deltaTime;
     }
-
-    void OnCollisionEnter2D(Collision2D collider)
-    {
-        //Kill player
-        if (collider.gameObject.tag == "Player")
-        {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
-        }
-
-        //destroy bullet
-        else if(collider.gameObject.tag != "Enemy")
-        {
-            Destroy(gameObject);
-        }
-    }
 }
