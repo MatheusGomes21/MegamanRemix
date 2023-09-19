@@ -61,7 +61,7 @@ public class cacto : MonoBehaviour
         animator.SetBool("Dead", true);
         gameObject.GetComponent<PolygonCollider2D>().enabled = false;
         yield return new WaitForSeconds(2);
-        Destroy(gameObject);
+        gameObject.SetActive(false);
     }
 
     // Start is called before the first frame update
@@ -102,15 +102,6 @@ public class cacto : MonoBehaviour
         if (gameObject.tag == "Dead")
         {
             StartCoroutine(Death());
-        }
-    }
-
-    void OnCollisionEnter2D(Collision2D collider)
-    {
-        //Kill player
-        if (collider.gameObject.tag == "Player")
-        {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         }
     }
 }
