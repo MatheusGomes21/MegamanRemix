@@ -1,0 +1,58 @@
+PRIORIDADE
+1 - Tem q resolver antes do boss
+2 - Ia ser bom resolver ate entregar
+3 - Se der resolve
+
+•geral
+-animação de pulo e queda não tocam - C1
+-efeito do tiro era para aparecer apenas quando uma bala acerta - C2
+-dá p atirar enquanto recarrega, porém as balas não balam - C1
+-nerfar o coyote jump - M2
+-concertar bug do cowboy deslizante - C3
+
+•fase 1
+
+design
+-as plataformas não se mexem mais (não sei se é intencional) - c2
+-parar o personagem durante a transição para a segunda fase - C1
+
+animações
+-cacto idle não está segurando a arma - C2
+-animação do cacto morrendo está rápida demais - M2
+-cacto ainda se mexe enquanto morre - C1
+-na real nm era pro cacto se mexer
+
+bugs
+
+--//--
+
+fase 2
+
+design
+-os colecionáveis podem ser pegos com a mira - C2
+-tnt não explode (agora tem animação da explosão) - C1
+
+animações
+-animações do fabiano estão rapidas demais - M2
+
+bugs
+-fabiano desaparece ao colocar a mira em cima dele no começo da segunda fase
+(ele ta listado como colecionável?) - C2
+-background na parte do trem ta clipando - C1
+
+--//--
+
+fase 3
+
+design
+-asteroide não mata (e não era pra ser um asteroide, era soh uma pedra de chão) - M1
+-plataformas logo após os lasers estão do tamanho errado - M1
+
+animações
+-parede de laser ta do tamanho errado e sem as animações - C2
+-cacto espacial está com as animações erradas e andando ao contrário (n era nm p ele andar) - C1
+
+bugs
+-as plataformas flutuantes da segunda sequencia delas vibram - C3
+-é possível clipar dentro do chão ficando embaixo do elevador  - C3
+provavelmente tem mais coisa na fase 2 
