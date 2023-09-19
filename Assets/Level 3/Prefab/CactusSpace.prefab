@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 8169787249309890534}
   - component: {fileID: 8169787249309890535}
   - component: {fileID: 8169787249309890529}
+  - component: {fileID: 1557998077584571893}
   m_Layer: 0
   m_Name: CactusSpace
   m_TagString: Enemy
@@ -166,6 +167,18 @@ PolygonCollider2D:
       - {x: 0.3125, y: -0.875}
       - {x: 0.6875, y: -0.34375}
       - {x: 0.6875, y: 0.40625}
+--- !u!114 &1557998077584571893
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8169787249309890554}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3619bb46086fdc348a917063726ae13a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &8169787249568950753
 GameObject:
   m_ObjectHideFlags: 0
@@ -178,9 +191,10 @@ GameObject:
   - component: {fileID: 8169787249568950765}
   - component: {fileID: 8169787249568950754}
   - component: {fileID: 8169787249568950755}
+  - component: {fileID: 5229510045517050807}
   m_Layer: 0
   m_Name: TiroCacto
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -262,7 +276,7 @@ CircleCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -278,5 +292,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9b65d64717a5fe34faadcf5ead31f50a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &5229510045517050807
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8169787249568950753}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3619bb46086fdc348a917063726ae13a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
