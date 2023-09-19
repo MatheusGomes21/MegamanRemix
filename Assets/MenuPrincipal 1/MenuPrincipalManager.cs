@@ -10,7 +10,7 @@ public class MenuPrincipalManager : MonoBehaviour
     [SerializeField]
     private GameObject PainelMenuInicial;
     [SerializeField]
-    private GameObject PainelOpaçoes;
+    private GameObject PainelOpçoes;
     public void Jogar()
     {
         SceneManager.LoadScene(NomeDoLevelDeJogo);
@@ -19,12 +19,12 @@ public class MenuPrincipalManager : MonoBehaviour
     public void AbrirOpçoes()
     {
         PainelMenuInicial.SetActive(false);
-        PainelOpaçoes.SetActive(true);
+        PainelOpçoes.SetActive(true);
     }
 
     public void FecharOpçoes()
     {
-        PainelOpaçoes.SetActive(false);
+        PainelOpçoes.SetActive(false);
         PainelMenuInicial.SetActive(true);
     }
 
