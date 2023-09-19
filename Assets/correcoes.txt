@@ -23,7 +23,6 @@ animações
 -na real nm era pro cacto se mexer
 
 bugs
--cactos dentro do chão - M1
 
 --//--
 
@@ -31,14 +30,10 @@ fase 2
 
 design
 -os colecionáveis podem ser pegos com a mira - C2
--cactos da fase secreta não atiram - M1
--pedras da caverna estão com a cor errada - M1
--é muito fácil errar o pulão na caverna e acidentalmente entrar na fase secreta - M2
 -tnt não explode (agora tem animação da explosão) - C1
 
 animações
 -animações do fabiano estão rapidas demais - M2
--trem está com baixa qualidade (versão melhor ja está no disc) - M1
 
 bugs
 -fabiano desaparece ao colocar a mira em cima dele no começo da segunda fase
