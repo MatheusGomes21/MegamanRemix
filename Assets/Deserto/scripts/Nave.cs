@@ -9,6 +9,7 @@ public class Nave : MonoBehaviour
     Animator laserAnimator;
     GameObject player;
     GameObject laser;
+    public Control playerScript;
 
     //stats
     public float travelSpeedX;

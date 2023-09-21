@@ -4,9 +4,9 @@ PRIORIDADE
 3 - Se der resolve
 
 •geral
--animação de pulo e queda não tocam - C1
+-animação de pulo e queda não tocam - C2
 -efeito do tiro era para aparecer apenas quando uma bala acerta - C2
--dá p atirar enquanto recarrega, porém as balas não balam - C1
+-dá p atirar enquanto recarrega, porém as balas não balam - C3
 -nerfar o coyote jump - M2
 -concertar bug do cowboy deslizante - C3
 
@@ -52,6 +52,6 @@ animações
 -cacto espacial está com as animações erradas e andando ao contrário (n era nm p ele andar) - C1
 
 bugs
--as plataformas flutuantes da segunda sequencia delas vibram - C3
--é possível clipar dentro do chão ficando embaixo do elevador  - C3
+-as plataformas flutuantes da segunda sequencia delas vibram - C2
+-é possível clipar dentro do chão ficando embaixo do elevador  - C2
 provavelmente tem mais coisa na fase 2 

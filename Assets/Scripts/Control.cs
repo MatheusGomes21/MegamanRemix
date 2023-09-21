@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Control : MonoBehaviour
 {
@@ -15,6 +16,8 @@ public class Control : MonoBehaviour
 
     int bullets;
     int maxBullets = 3;
+    public float cutscene = -0.1f;
+    public float cutsceneProgression = 0;
     GameObject bullet;
 
     void Start()
@@ -25,50 +28,80 @@ public class Control : MonoBehaviour
     }
     void Update()
     {
-        if (Input.GetAxis("Horizontal") != 0)
-        {
-            animator.SetBool("Correndo", true);
-        }
+        //o valor de cutscene indica quando positivo, o nivel e o numero da cutscene (primeira do nivel 0 eh 0.1). Se for negativo, indica a proxima cutscene q deve tocar (por exemplo, -0.1 indica q a proxima a tocar é a cutscne 0.1)
 
-        else
+        //movement
+        if (cutscene <= 0)
         {
-            animator.SetBool("Correndo", false);
-        }
-        if (Input.GetAxis("Fire1") != 0)
-        {
-            animator.SetBool("Atirando", true);
-        }
-
-        else
-        {
-            animator.SetBool("Atirando", false);
-        }
-        xmov = Input.GetAxis("Horizontal");
-        if (Input.GetButtonDown("Jump"))
-        {
-            if (jumptime < 0.1f)
+            if (Input.GetAxis("Horizontal") != 0)
             {
-                doublejump = true;
+                animator.SetBool("Correndo", true);
+            }
+
+            else
+            {
+                animator.SetBool("Correndo", false);
+            }
+            if (Input.GetAxis("Fire1") != 0)
+            {
+                animator.SetBool("Atirando", true);
+            }
+
+            else
+            {
+                animator.SetBool("Atirando", false);
+            }
+            xmov = Input.GetAxis("Horizontal");
+            if (Input.GetButtonDown("Jump"))
+            {
+                if (jumptime < 0.1f)
+                {
+                    doublejump = true;
+                }
+            }
+            if (Input.GetButton("Jump"))
+            {
+                jump = true;
+            }
+            else
+            {
+                jump = false;
+                doublejump = false;
+                jumptime = 0;
+                jumptimeside = 0;
             }
         }
-        if (Input.GetButton("Jump"))
-        {
-            jump = true;
-        }
-        else
-        {
-            jump = false;
-            doublejump = false;
-            jumptime = 0;
-            jumptimeside = 0;
-        }
 
-        //atirar
-        if (Input.GetButtonDown("Fire1"))
+        //CUTSCEENES
+        switch (cutscene)
         {
-            //fire.Emit(1);
+            //cutscene level 0
+            case -0.1f:
+                switch (cutsceneProgression)
+                {
+                    //progresso 0
+                    case 0:
+                        if (transform.position.x < -3.3f)
+                        {
+                            animator.SetBool("Correndo", true);
+                            transform.position += new Vector3(1, 0, 0) * Time.deltaTime;
+                        }
+
+                        else
+                        {
+                            animator.SetBool("Correndo", false);
+                            cutsceneProgression = 1;
+                        }
+                        break;
+
+                    //progresso 1
+                    case 1:
+                        cutscene = -0.2f;
+                        break;
+                }
+                break;
         }
-    }
+}
 
     void FixedUpdate()
     {
