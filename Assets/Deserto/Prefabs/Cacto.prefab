@@ -213,6 +213,7 @@ GameObject:
   - component: {fileID: 8562873709206686033}
   - component: {fileID: 8562873709206686034}
   - component: {fileID: 8562873709206686035}
+  - component: {fileID: 6969840156503710260}
   m_Layer: 0
   m_Name: TiroCacto
   m_TagString: Untagged
@@ -297,7 +298,7 @@ CircleCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -313,5 +314,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9b65d64717a5fe34faadcf5ead31f50a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &6969840156503710260
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8562873709206686037}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3619bb46086fdc348a917063726ae13a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 

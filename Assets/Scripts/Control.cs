@@ -72,11 +72,11 @@ public class Control : MonoBehaviour
             }
         }
 
-        //CUTSCEENES
+        //CUTSCENES
         switch (cutscene)
         {
             //cutscene level 0
-            case -0.1f:
+            case 0.1f:
                 switch (cutsceneProgression)
                 {
                     //progresso 0
@@ -90,13 +90,17 @@ public class Control : MonoBehaviour
                         else
                         {
                             animator.SetBool("Correndo", false);
-                            cutsceneProgression = 1;
+                            cutsceneProgression = 3; //aqui troca pra 1 ao inves do final
                         }
                         break;
 
                     //progresso 1
                     case 1:
-                        cutscene = -0.2f;
+                        break;
+
+                    //progresso final
+                    case 3:
+                        cutscene = -1.1f;
                         break;
                 }
                 break;

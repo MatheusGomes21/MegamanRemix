@@ -9,6 +9,7 @@ public class camera : MonoBehaviour
     bool changing = false;
     public float speed;
     float xPosit = 6.443217f;
+    public bool self = true;
 
     GameObject player;
 
@@ -16,34 +17,42 @@ public class camera : MonoBehaviour
     void Start()
     {
         player = GameObject.Find("Cowboy");
+
+        if (self == false)
+        {
+            self = true;
+        }
     }
 
     
     // Update is called once per frame
     void Update()
     {
-        if (SceneManager.GetActiveScene().name == "Level 3")
+        if (self)
         {
-            if (player.transform.position.y >= 12.15)
+            if (SceneManager.GetActiveScene().name == "Level 3")
             {
-                changing = true;
-            }
-
-            if (changing)
-            {
-                if (transform.position.x > player.transform.position.x - 6.443217f && changed == false)
+                if (player.transform.position.y >= 12.15)
                 {
-                    MonoBehaviour.print("sim");
-                    xPosit -= speed;
+                    changing = true;
                 }
 
-                if (transform.position.x <= player.transform.position.x - 6.443217f)
+                if (changing)
                 {
-                    changed = true;
+                    if (transform.position.x > player.transform.position.x - 6.443217f && changed == false)
+                    {
+                        MonoBehaviour.print("sim");
+                        xPosit -= speed;
+                    }
+
+                    if (transform.position.x <= player.transform.position.x - 6.443217f)
+                    {
+                        changed = true;
+                    }
                 }
             }
+
+            transform.position = player.transform.position + new Vector3(xPosit, 1.305375f, -10);
         }
-
-        transform.position = player.transform.position + new Vector3(xPosit, 1.305375f, -10);
     }
 }

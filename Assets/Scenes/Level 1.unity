@@ -505,6 +505,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 0
+  self: 1
 --- !u!82 &144247737
 AudioSource:
   m_ObjectHideFlags: 0
@@ -11097,6 +11098,7 @@ MonoBehaviour:
   speedX: 0.7
   speedY: 0.7
   waitTime: 10
+  cameraScript: {fileID: 144247736}
 --- !u!1 &495833020
 GameObject:
   m_ObjectHideFlags: 0
@@ -11391,6 +11393,18 @@ Transform:
   m_Father: {fileID: 999623444}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &736069458 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6693220705742360353, guid: 557f72216161e5d408720facf4833901,
+    type: 3}
+  m_PrefabInstance: {fileID: 1647611274791760286}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 61782caa48f696d458c95daa6e99c7e8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &826744072
 GameObject:
   m_ObjectHideFlags: 0
@@ -27950,6 +27964,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eadb456ee8e7510438c08a3714e8f8b0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerScript: {fileID: 0}
   travelSpeedX: 0.5
   travelSpeedY: 0.5
   aimSpeed: 2.5
@@ -30507,6 +30522,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 6693220705742360353, guid: 557f72216161e5d408720facf4833901,
+        type: 3}
+      propertyPath: cutscene
+      value: -1.1
+      objectReference: {fileID: 0}
     - target: {fileID: 6729610209538854697, guid: 557f72216161e5d408720facf4833901,
         type: 3}
       propertyPath: m_RootOrder
@@ -30567,6 +30587,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cowboy
       objectReference: {fileID: 0}
+    - target: {fileID: 6734274191776820617, guid: 557f72216161e5d408720facf4833901,
+        type: 3}
+      propertyPath: playerScript
+      value: 
+      objectReference: {fileID: 736069458}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 557f72216161e5d408720facf4833901, type: 3}
 --- !u!1001 &1700887172310122639

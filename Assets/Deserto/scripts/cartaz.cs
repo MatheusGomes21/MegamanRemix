@@ -15,6 +15,8 @@ public class cartaz : MonoBehaviour
     GameObject player;
     GameObject camera;
 
+    public camera cameraScript;
+
     IEnumerator ChangeScene()
     {
         yield return new WaitForSeconds(waitTime);
@@ -33,6 +35,7 @@ public class cartaz : MonoBehaviour
     {
         if (player.transform.position.x >= 200)
         {
+            cameraScript.self = false;
             change = true;
             transform.position = new Vector3(transform.position.x, transform.position.y, -2);
         }

@@ -7,6 +7,7 @@ public class Pulo : MonoBehaviour
     public float jumpForce = 10f;
     private Rigidbody2D rb;
     public Animator animator;
+    public Control playerScript;
 
     bool jumping;
 
@@ -17,7 +18,7 @@ public class Pulo : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space) && jumping == false)
+        if (Input.GetKeyDown(KeyCode.Space) && jumping == false && playerScript.cutscene <= 0)
         {
             rb.velocity = new Vector2(rb.velocity.x, jumpForce);
             animator.SetBool("Jump", true);
