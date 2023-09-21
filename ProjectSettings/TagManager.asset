@@ -12,6 +12,7 @@ TagManager:
   - Template
   - Dead
   - Checkpoint
+  - Ground
   layers:
   - Default
   - TransparentFX
