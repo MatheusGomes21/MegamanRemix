@@ -72,6 +72,16 @@ public class encostouMorreu : MonoBehaviour
                 enemy.SetActive(true);
             }
 
+            foreach (GameObject enemy in GameObject.FindGameObjectsWithTag("Dead"))
+            {
+                if (enemy.name == "TiroCacto(Clone)")
+                {
+                    Destroy(enemy);
+                }
+
+                enemy.SetActive(true);
+            }
+
             player.transform.position = spawnpoint;
         }
     }

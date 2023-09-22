@@ -14,13 +14,10 @@ PRIORIDADE
 
 design
 -as plataformas não se mexem mais (não sei se é intencional) - c2
--parar o personagem durante a transição para a segunda fase - C1
 
 animações
 -cacto idle não está segurando a arma - C2
 -animação do cacto morrendo está rápida demais - M2
--cacto ainda se mexe enquanto morre - C1
--na real nm era pro cacto se mexer
 
 bugs
 
@@ -35,9 +32,7 @@ design
 animações
 
 bugs
--fabiano desaparece ao colocar a mira em cima dele no começo da segunda fase
-(ele ta listado como colecionável?) - C2
--background na parte do trem ta clipando - C1
+
 
 --//--
 
@@ -53,5 +48,5 @@ animações
 
 bugs
 -as plataformas flutuantes da segunda sequencia delas vibram - C2
--é possível clipar dentro do chão ficando embaixo do elevador  - C2
+-é possível clipar dentro do chão ficando embaixo do elevador  - C3
 provavelmente tem mais coisa na fase 2 

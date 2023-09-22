@@ -11,6 +11,7 @@ public class cacto : MonoBehaviour
     public float patrolSize;
     public float speed;
     public string modo = "d boa";
+    public AudioClip audio;
     float movement;
     
 
@@ -58,9 +59,22 @@ public class cacto : MonoBehaviour
     IEnumerator Death()
     {
         shooting = true;
+
         animator.SetBool("Dead", true);
+
         gameObject.GetComponent<PolygonCollider2D>().enabled = false;
+
+        gameObject.transform.GetChild(1).GetComponent<SpriteRenderer>().enabled = true;
+        gameObject.transform.GetChild(1).GetComponent<Animator>().SetBool("Explosao", true);
+
+        if (gameObject.GetComponent<AudioSource>().isPlaying == false)
+        {
+            gameObject.GetComponent<AudioSource>().Play();
+        }
+
         yield return new WaitForSeconds(2);
+        gameObject.transform.GetChild(1).GetComponent<SpriteRenderer>().enabled = false;
+        gameObject.transform.GetChild(1).GetComponent<Animator>().SetBool("Explosao", false);
         gameObject.SetActive(false);
     }
 

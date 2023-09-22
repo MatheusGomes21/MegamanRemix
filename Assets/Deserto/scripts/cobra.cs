@@ -17,6 +17,24 @@ public class cobra : MonoBehaviour
 
     GameObject player;
 
+    IEnumerator Death()
+    {
+        gameObject.GetComponent<PolygonCollider2D>().enabled = false;
+
+        gameObject.transform.GetChild(0).GetComponent<SpriteRenderer>().enabled = true;
+        gameObject.transform.GetChild(0).GetComponent<Animator>().SetBool("Explosao", true);
+
+        if (gameObject.GetComponent<AudioSource>().isPlaying == false)
+        {
+            gameObject.GetComponent<AudioSource>().Play();
+        }
+
+        yield return new WaitForSeconds(2);
+        gameObject.transform.GetChild(0).GetComponent<SpriteRenderer>().enabled = false;
+        gameObject.transform.GetChild(0).GetComponent<Animator>().SetBool("Explosao", false);
+        gameObject.SetActive(false);
+    }
+
     void Start()
     {
         player = GameObject.Find("Cowboy");
@@ -80,15 +98,7 @@ public class cobra : MonoBehaviour
 
         if (gameObject.tag == "Dead")
         {
-            Destroy(gameObject);
-        }
-    }
-
-    private void OnCollisionEnter2D(Collision2D collision)
-    {
-        if (collision.gameObject.tag == "Player")
-        {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+            StartCoroutine(Death());
         }
     }
 }
