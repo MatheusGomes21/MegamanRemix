@@ -186,7 +186,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 32dbdbde539893742a26751239969f07, type: 3}
+  m_Sprite: {fileID: -1485705339, guid: 6445657aae928554ea33590f05ab114c, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -392,7 +392,6 @@ MonoBehaviour:
   patrolSize: 0.8
   speed: 0.6
   modo: d boa
-  audio: {fileID: 8300000, guid: 80419fa9874a1434da177eee33d13d92, type: 3}
 --- !u!114 &8727305981815038409
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -405,6 +404,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3619bb46086fdc348a917063726ae13a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  spawnpoint: {x: 0, y: 0, z: 0}
 --- !u!1 &8562873709206686037
 GameObject:
   m_ObjectHideFlags: 0
@@ -415,9 +415,9 @@ GameObject:
   m_Component:
   - component: {fileID: 8562873709206686036}
   - component: {fileID: 8562873709206686033}
-  - component: {fileID: 8562873709206686034}
   - component: {fileID: 8562873709206686035}
   - component: {fileID: 6969840156503710260}
+  - component: {fileID: 5337615849923166869}
   m_Layer: 0
   m_Name: TiroCacto
   m_TagString: Enemy
@@ -492,22 +492,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!58 &8562873709206686034
-CircleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8562873709206686037}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  serializedVersion: 2
-  m_Radius: 0.1
 --- !u!114 &8562873709206686035
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -532,3 +516,35 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3619bb46086fdc348a917063726ae13a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  spawnpoint: {x: 0, y: 0, z: 0}
+--- !u!60 &5337615849923166869
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8562873709206686037}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.25, y: 0.25}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: -0.09375, y: 0.125}
+      - {x: -0.125, y: 0.09375}
+      - {x: -0.125, y: -0.125}
+      - {x: 0.125, y: -0.125}
+      - {x: 0.125, y: 0.0625}
+      - {x: 0.0625, y: 0.125}

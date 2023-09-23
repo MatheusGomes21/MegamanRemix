@@ -3,16 +3,15 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class cacto : MonoBehaviour
+public class calango : MonoBehaviour
 {
     //stats
     public float range;
     public int waitTime;
-    public float patrolSize;
-    public float speed;
     public string modo = "d boa";
-    float movement;
-    
+    float alpha = 1;
+    int invisiProgress = 0;
+
 
 
     //game Objects
@@ -21,13 +20,47 @@ public class cacto : MonoBehaviour
 
     //components
     Animator animator;
+    SpriteRenderer renderer;
 
 
     //functions
     bool shooting = false;
+
+    IEnumerator Invisilate()
+    {
+        animator.SetBool("Invisilating", true);
+        yield return new WaitForSeconds(0.5f);
+
+        if (alpha > 0 && invisiProgress == 0)
+        {
+            alpha -= 0.006f;
+            renderer.color = new Color(1, 1, 1, alpha);
+        }
+
+        if (alpha < 0 && invisiProgress == 0)
+        {
+            transform.position = new Vector3(player.transform.position.x + range, player.transform.position.y + 0.225f, 0);
+            yield return new WaitForSeconds(4);
+            invisiProgress = 1;
+            alpha = 0.01f;
+        }
+
+        if (alpha < 1 && invisiProgress == 1)
+        {
+            alpha += 0.006f;
+            renderer.color = new Color(1, 1, 1, alpha);
+        }
+
+        if (alpha > 1 && invisiProgress == 1)
+        {
+            invisiProgress = 0;
+            animator.SetBool("Invisilating", false);
+            modo = "atirando";
+        }
+    }
+
     IEnumerator Shoot()
     {
-        modo = "bolado";
         float spawnpointX = 0;
 
         if (transform.position.x > player.transform.position.x)
@@ -49,17 +82,16 @@ public class cacto : MonoBehaviour
         animator.SetBool("Shooting", true);
         Instantiate(bullet, new Vector3(spawnpointX, transform.position.y, 0), transform.rotation);
         shooting = true;
-        yield return new WaitForSeconds(0.1f);
+        yield return new WaitForSeconds(1f);
         animator.SetBool("Shooting", false);
         yield return new WaitForSeconds(waitTime);
         shooting = false;
+        modo = "d boa";
     }
 
     IEnumerator Death()
-    {
+    {   
         shooting = true;
-
-        animator.SetBool("Dead", true);
 
         gameObject.GetComponent<PolygonCollider2D>().enabled = false;
 
@@ -75,8 +107,6 @@ public class cacto : MonoBehaviour
         yield return new WaitForSeconds(4);
         gameObject.transform.GetChild(1).GetComponent<SpriteRenderer>().enabled = false;
         gameObject.transform.GetChild(1).GetComponent<Animator>().SetBool("Explosao", false);
-        animator.SetBool("Dead", false);
-        yield return new WaitForSeconds(0.2f);
         gameObject.tag = "Deaded";
     }
 
@@ -86,6 +116,7 @@ public class cacto : MonoBehaviour
         player = GameObject.Find("Cowboy");
         bullet = gameObject.transform.GetChild(0).gameObject;
         animator = gameObject.GetComponent<Animator>();
+        renderer = gameObject.GetComponent<SpriteRenderer>();
     }
 
     // Update is called once per frame
@@ -93,26 +124,37 @@ public class cacto : MonoBehaviour
     {
         if (gameObject.tag != "Dead" | gameObject.tag != "Deaded")
         {
-            //patrol
-            transform.position += new Vector3(speed, 0, 0) * Time.deltaTime;
-            movement += Mathf.Abs(speed / 250);
-
-            if (movement > patrolSize)
+            switch (modo)
             {
-                movement = 0;
-                speed *= -1;
-                transform.localScale = Vector3.Scale(transform.localScale, new Vector3(-1, 1, 1));
-            }
+                case "d boa":
 
-            //shoot
-            if (transform.position.x > player.transform.position.x && (transform.position.x - player.transform.position.x) < range && shooting == false)
-            {
-                StartCoroutine(Shoot());
-            }
+                    renderer.color = new Color(1, 1, 1, 1);
 
-            if (transform.position.x < player.transform.position.x && (player.transform.position.x - transform.position.x) < range && shooting == false)
-            {
-                StartCoroutine(Shoot());
+                    if (transform.position.x > player.transform.position.x && (transform.position.x - player.transform.position.x) < range && shooting == false)
+                    {
+                        modo = "invisilando";
+                    }
+
+                    if (transform.position.x < player.transform.position.x && (player.transform.position.x - transform.position.x) < range && shooting == false)
+                    {
+                        modo = "invisilando";
+                    }
+
+                    break;
+
+                case "invisilando":
+
+                    StartCoroutine(Invisilate());
+
+                    break;
+
+                case "atirando":
+                    if (shooting == false)
+                    {
+                        StartCoroutine(Shoot());
+                    }
+
+                    break;
             }
         }
 
@@ -125,7 +167,10 @@ public class cacto : MonoBehaviour
         if (gameObject.tag == "Deaded")
         {
             //stats reset
-            movement = 0;
+            alpha = 1;
+            modo = "d boa";
+            animator.SetBool("Invisilating", false);
+            animator.SetBool("Shooting", false);
         }
     }
 }

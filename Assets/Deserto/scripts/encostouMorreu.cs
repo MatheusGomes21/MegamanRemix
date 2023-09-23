@@ -10,38 +10,49 @@ public class encostouMorreu : MonoBehaviour
 {
 
     GameObject player;
-    Vector3 spawnpoint;
+    Vector3 playerSpawnpoint;
+    public Vector3 spawnpoint;
+
+    IEnumerator ResetWait(GameObject enemy)
+    {
+        yield return new WaitForSeconds(0.1f);
+        enemy.GetComponent<PolygonCollider2D>().enabled = true;
+        enemy.GetComponent<SpriteRenderer>().enabled = true;
+        enemy.tag = "Enemy";
+    }
 
     // Start is called before the first frame update
     void Start()
     {
+        spawnpoint = gameObject.transform.position;
+
         player = GameObject.Find("Cowboy");
 
         if (SceneManager.GetActiveScene().name == "Level 0")
         {
-            spawnpoint = new Vector3(-2.92f, -1.255f, -1);
+            playerSpawnpoint = new Vector3(-2.92f, -1.255f, -1);
         }
 
         if (SceneManager.GetActiveScene().name == "Level 1")
         {
-            spawnpoint = new Vector3(-7.18f, -1.251658f, -1);
+            playerSpawnpoint = new Vector3(-7.18f, -1.251658f, -1);
         }
 
         if (SceneManager.GetActiveScene().name == "Level 2")
         {
-            spawnpoint = new Vector3(-7.49f, -1.255f, -1);
+            playerSpawnpoint = new Vector3(-7.49f, -1.255f, -1);
         }
 
         if (SceneManager.GetActiveScene().name == "Level 3")
         {
             if (player.transform.position.x > 114 | player.transform.position.y > 15)
             {
-                spawnpoint = new Vector3(112, 31.8f, -1);
+                playerSpawnpoint = new Vector3(112, 31.8f, -1);
             }
 
             else
             {
-                spawnpoint = new Vector3(-2.59f, -3.22f, -1);
+                playerSpawnpoint = new Vector3(-2.59f, -3.22f, -1);
             }
         }
     }
@@ -53,7 +64,7 @@ public class encostouMorreu : MonoBehaviour
         {
             if (player.transform.position.x > 114)
             {
-                spawnpoint = new Vector3(112, 31.8f, -1);
+                playerSpawnpoint = new Vector3(112, 31.8f, -1);
             }
         }
     }
@@ -69,20 +80,17 @@ public class encostouMorreu : MonoBehaviour
                     Destroy(enemy);
                 }
 
-                enemy.SetActive(true);
+                enemy.tag = "Deaded";
+                
             }
 
-            foreach (GameObject enemy in GameObject.FindGameObjectsWithTag("Dead"))
+            foreach (GameObject enemy in GameObject.FindGameObjectsWithTag("Deaded"))
             {
-                if (enemy.name == "TiroCacto(Clone)")
-                {
-                    Destroy(enemy);
-                }
-
-                enemy.SetActive(true);
+                StartCoroutine(ResetWait(enemy));
             }
-
-            player.transform.position = spawnpoint;
+            
+            player.transform.position = playerSpawnpoint;
+            gameObject.transform.position = spawnpoint;
         }
     }
 }

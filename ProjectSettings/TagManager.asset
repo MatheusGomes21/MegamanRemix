@@ -13,6 +13,7 @@ TagManager:
   - Dead
   - Checkpoint
   - Ground
+  - Deaded
   layers:
   - Default
   - TransparentFX
