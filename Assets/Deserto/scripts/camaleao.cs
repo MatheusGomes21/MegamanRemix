@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class cacto : MonoBehaviour
+public class camaleao : MonoBehaviour
 {
     //stats
     public float range;
@@ -12,7 +12,7 @@ public class cacto : MonoBehaviour
     public float speed;
     public string modo = "d boa";
     float movement;
-    
+
 
 
     //game Objects
@@ -100,7 +100,7 @@ public class cacto : MonoBehaviour
         }
 
         //shoot
-        
+
         if (transform.position.x > player.transform.position.x && (transform.position.x - player.transform.position.x) < range && shooting == false)
         {
             StartCoroutine(Shoot());

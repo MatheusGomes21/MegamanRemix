@@ -10686,6 +10686,8 @@ MonoBehaviour:
   rdb: {fileID: 6756893934447856457}
   fire: {fileID: 6896890023947556039}
   animator: {fileID: 0}
+  cutscene: -0.1
+  cutsceneProgression: 0
 --- !u!70 &6741251902124986467
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -10716,6 +10718,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   jumpForce: 8
   animator: {fileID: 6640441524333581211}
+  playerScript: {fileID: 6693220705742360353}
 --- !u!114 &1689738503
 MonoBehaviour:
   m_ObjectHideFlags: 0
