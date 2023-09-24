@@ -546,6 +546,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   range: 10
   waitTime: 2
+  spawnDistance: 10
   modo: d boa
 --- !u!114 &498864309762364046
 MonoBehaviour:

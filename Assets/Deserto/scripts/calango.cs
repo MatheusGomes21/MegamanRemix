@@ -8,6 +8,7 @@ public class calango : MonoBehaviour
     //stats
     public float range;
     public int waitTime;
+    public float spawnDistance;
     public string modo = "d boa";
     float alpha = 1;
     int invisiProgress = 0;
@@ -39,7 +40,7 @@ public class calango : MonoBehaviour
 
         if (alpha < 0 && invisiProgress == 0)
         {
-            transform.position = new Vector3(player.transform.position.x + range, player.transform.position.y + 0.225f, 0);
+            transform.position = new Vector3(player.transform.position.x + spawnDistance, player.transform.position.y + 0.225f, 0);
             yield return new WaitForSeconds(4);
             invisiProgress = 1;
             alpha = 0.01f;
