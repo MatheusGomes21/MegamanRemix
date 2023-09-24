@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class mira : MonoBehaviour
+public class Mira : MonoBehaviour
 {
     public Animator animator;
     public Animator fxAnimator;
