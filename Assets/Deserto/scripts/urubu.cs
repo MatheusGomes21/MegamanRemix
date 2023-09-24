@@ -23,6 +23,25 @@ public class urubu : MonoBehaviour
         }
     }
 
+    IEnumerator Death()
+    {
+        gameObject.GetComponent<PolygonCollider2D>().enabled = false;
+
+        gameObject.transform.GetChild(0).GetComponent<SpriteRenderer>().enabled = true;
+        gameObject.transform.GetChild(0).GetComponent<Animator>().SetBool("Explosao", true);
+
+        if (gameObject.GetComponent<AudioSource>().isPlaying == false)
+        {
+            gameObject.GetComponent<AudioSource>().Play();
+        }
+
+        gameObject.GetComponent<SpriteRenderer>().enabled = false;
+        yield return new WaitForSeconds(4);
+        gameObject.transform.GetChild(1).GetComponent<SpriteRenderer>().enabled = false;
+        gameObject.transform.GetChild(1).GetComponent<Animator>().SetBool("Explosao", false);
+        gameObject.tag = "Deaded";
+    }
+
     // Start is called before the first frame update
     void Start()
     {
@@ -36,14 +55,22 @@ public class urubu : MonoBehaviour
         {
             transform.localScale = new Vector3(-1, 1, 1);
             transform.position -= new Vector3(speedX, 0, 0) * Time.deltaTime;
+            CheckY();
         }
 
         if (transform.position.x < player.transform.position.x && (player.transform.position.x - transform.position.x) < range)
         {
             transform.localScale = new Vector3(1, 1, 1);
             transform.position += new Vector3(speedX, 0, 0) * Time.deltaTime;
+            CheckY();
         }
 
-        CheckY();
+        
+
+        //death
+        if (gameObject.tag == "Dead")
+        {
+            StartCoroutine(Death());
+        }
     }
 }
