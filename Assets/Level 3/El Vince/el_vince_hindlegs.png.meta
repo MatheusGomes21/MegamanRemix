@@ -1,0 +1,805 @@
+fileFormatVersion: 2
+guid: 4a9cafdc52e7dd544b9d1d1e7ffff0ab
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: el_vince_hindlegs_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1639
+        width: 249
+        height: 149
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98c7aed24b0c8cd45ae9d851a4381bb6
+      internalID: 1402895234
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: el_vince_hindlegs_1
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1490
+        width: 249
+        height: 149
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c935db6a1c290324d843ada958af4d16
+      internalID: -2128090383
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: el_vince_hindlegs_2
+      rect:
+        serializedVersion: 2
+        x: 249
+        y: 1490
+        width: 249
+        height: 149
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22994a76f40f4e148b7cdf5b9c498840
+      internalID: 1915496700
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: el_vince_hindlegs_3
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1341
+        width: 249
+        height: 149
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac60464e0c3438a45a77c0492187bd72
+      internalID: -1446913119
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: el_vince_hindlegs_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1192
+        width: 249
+        height: 149
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d8805068a8b740439da3565f4d607bc
+      internalID: 978961009
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: el_vince_hindlegs_5
+      rect:
+        serializedVersion: 2
+        x: 249
+        y: 1192
+        width: 249
+        height: 149
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75f3192be2992c14c80ba07e2361cf4d
+      internalID: 824776475
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: el_vince_hindlegs_6
+      rect:
+        serializedVersion: 2
+        x: 498
+        y: 1192
+        width: 249
+        height: 149
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea04990bdac96ae4db856ad653915760
+      internalID: 730673967
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: el_vince_hindlegs_7
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1043
+        width: 249
+        height: 149
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a151e8468f334464c84d7260bcf2d344
+      internalID: 1446522781
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: el_vince_hindlegs_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 894
+        width: 249
+        height: 149
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d0aff29070cb58c488db45daf88688e3
+      internalID: 201925833
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: el_vince_hindlegs_9
+      rect:
+        serializedVersion: 2
+        x: 249
+        y: 894
+        width: 249
+        height: 149
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2927d9f3c9d74b34f96a00704aeab613
+      internalID: 751224393
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: el_vince_hindlegs_10
+      rect:
+        serializedVersion: 2
+        x: 498
+        y: 894
+        width: 249
+        height: 149
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fff59c752ddaffe4f8145e8729d3e541
+      internalID: 708881448
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: el_vince_hindlegs_11
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 745
+        width: 249
+        height: 149
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2828fcee7a4f3a24696596f3dbd16710
+      internalID: 282654718
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: el_vince_hindlegs_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 596
+        width: 249
+        height: 149
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba62c7912ff236e42ae9b132dabf2afb
+      internalID: -921222542
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: el_vince_hindlegs_13
+      rect:
+        serializedVersion: 2
+        x: 249
+        y: 596
+        width: 249
+        height: 149
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d7c56bdadeebade4cb65d53c134c0874
+      internalID: 556238345
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: el_vince_hindlegs_14
+      rect:
+        serializedVersion: 2
+        x: 498
+        y: 596
+        width: 249
+        height: 149
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cbb9f14cd7807aa4a8543d1576e6fd10
+      internalID: -1251364564
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: el_vince_hindlegs_15
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 447
+        width: 249
+        height: 149
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2539609263a99274a98ea0c9c6138c6d
+      internalID: 1955967250
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: el_vince_hindlegs_16
+      rect:
+        serializedVersion: 2
+        x: 249
+        y: 447
+        width: 249
+        height: 149
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 468c44d0395de604b8393786c82bafa5
+      internalID: -1164428260
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: el_vince_hindlegs_17
+      rect:
+        serializedVersion: 2
+        x: 498
+        y: 447
+        width: 249
+        height: 149
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 303191cc63f0fa746bf408307295caf1
+      internalID: -1174573624
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: el_vince_hindlegs_18
+      rect:
+        serializedVersion: 2
+        x: 747
+        y: 447
+        width: 249
+        height: 149
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a12aec1d099afc41b6aae278a73815c
+      internalID: 726749210
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: el_vince_hindlegs_19
+      rect:
+        serializedVersion: 2
+        x: 996
+        y: 447
+        width: 249
+        height: 149
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8339e4820c941f14599f9878d276c7d5
+      internalID: -1032238236
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: el_vince_hindlegs_20
+      rect:
+        serializedVersion: 2
+        x: 1245
+        y: 447
+        width: 249
+        height: 149
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b35da4aa38e15d1418e47839b96b7fa0
+      internalID: -1683616782
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: el_vince_hindlegs_21
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 298
+        width: 249
+        height: 149
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eabc0522f9df71f44ac3f7e0f859dda6
+      internalID: -339636398
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: el_vince_hindlegs_22
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 149
+        width: 249
+        height: 149
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e85ffec5ff8e56848b1c0ce4e3a147d4
+      internalID: 389153559
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: el_vince_hindlegs_23
+      rect:
+        serializedVersion: 2
+        x: 249
+        y: 149
+        width: 249
+        height: 149
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf507d9892115184fb53c4df803f1397
+      internalID: -1281381874
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: el_vince_hindlegs_24
+      rect:
+        serializedVersion: 2
+        x: 498
+        y: 149
+        width: 249
+        height: 149
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85f6cb490604a6a409c0e31feb1a9a89
+      internalID: -1931666122
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: el_vince_hindlegs_25
+      rect:
+        serializedVersion: 2
+        x: 747
+        y: 149
+        width: 249
+        height: 149
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ebadd3d60bca4b4bb6edd1dffc241b0
+      internalID: -1078373406
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: el_vince_hindlegs_26
+      rect:
+        serializedVersion: 2
+        x: 996
+        y: 149
+        width: 249
+        height: 149
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aaec7f4e3ee4d714aa77878515a536a2
+      internalID: -1528339990
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: el_vince_hindlegs_27
+      rect:
+        serializedVersion: 2
+        x: 1245
+        y: 149
+        width: 249
+        height: 149
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 887272a3fc7029045a238c2224315bd1
+      internalID: -1654872316
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: el_vince_hindlegs_28
+      rect:
+        serializedVersion: 2
+        x: 1494
+        y: 149
+        width: 249
+        height: 149
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ff0577a212258e41a87103f16a3513f
+      internalID: -1382899953
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: el_vince_hindlegs_29
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 249
+        height: 149
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8bbe1817faac5a2458c6bc733ad70e26
+      internalID: -1720109931
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: el_vince_hindlegs_30
+      rect:
+        serializedVersion: 2
+        x: 249
+        y: 0
+        width: 249
+        height: 149
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8f7550627d05f04cbbe3136e2c89021
+      internalID: 1964132195
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      el_vince_hindlegs_15: 1955967250
+      el_vince_hindlegs_2: 1915496700
+      el_vince_hindlegs_5: 824776475
+      el_vince_hindlegs_1: -2128090383
+      el_vince_hindlegs_8: 201925833
+      el_vince_hindlegs_16: -1164428260
+      el_vince_hindlegs_19: -1032238236
+      el_vince_hindlegs_21: -339636398
+      el_vince_hindlegs_24: -1931666122
+      el_vince_hindlegs_28: -1382899953
+      el_vince_hindlegs_22: 389153559
+      el_vince_hindlegs_6: 730673967
+      el_vince_hindlegs_10: 708881448
+      el_vince_hindlegs_11: 282654718
+      el_vince_hindlegs_17: -1174573624
+      el_vince_hindlegs_26: -1528339990
+      el_vince_hindlegs_18: 726749210
+      el_vince_hindlegs_30: 1964132195
+      el_vince_hindlegs_13: 556238345
+      el_vince_hindlegs_25: -1078373406
+      el_vince_hindlegs_29: -1720109931
+      el_vince_hindlegs_3: -1446913119
+      el_vince_hindlegs_9: 751224393
+      el_vince_hindlegs_20: -1683616782
+      el_vince_hindlegs_7: 1446522781
+      el_vince_hindlegs_14: -1251364564
+      el_vince_hindlegs_23: -1281381874
+      el_vince_hindlegs_27: -1654872316
+      el_vince_hindlegs_12: -921222542
+      el_vince_hindlegs_4: 978961009
+      el_vince_hindlegs_0: 1402895234
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
