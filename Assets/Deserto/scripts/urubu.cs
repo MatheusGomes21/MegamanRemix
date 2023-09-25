@@ -37,8 +37,8 @@ public class urubu : MonoBehaviour
 
         gameObject.GetComponent<SpriteRenderer>().enabled = false;
         yield return new WaitForSeconds(4);
-        gameObject.transform.GetChild(1).GetComponent<SpriteRenderer>().enabled = false;
-        gameObject.transform.GetChild(1).GetComponent<Animator>().SetBool("Explosao", false);
+        gameObject.transform.GetChild(0).GetComponent<SpriteRenderer>().enabled = false;
+        gameObject.transform.GetChild(0).GetComponent<Animator>().SetBool("Explosao", false);
         gameObject.tag = "Deaded";
     }
 

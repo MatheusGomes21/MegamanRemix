@@ -1174,6 +1174,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cacto (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 5660594293100554117, guid: c03636ceafc77304088b660870ecd2b4,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c03636ceafc77304088b660870ecd2b4, type: 3}
 --- !u!4 &227176533 stripped
@@ -30056,10 +30061,25 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 572854997788900068, guid: fd92617d50f781f4a9c6435c520e4ca4,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 572854997788900074, guid: fd92617d50f781f4a9c6435c520e4ca4,
         type: 3}
       propertyPath: range
       value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 3739815262660280415, guid: fd92617d50f781f4a9c6435c520e4ca4,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4765632885753886215, guid: fd92617d50f781f4a9c6435c520e4ca4,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fd92617d50f781f4a9c6435c520e4ca4, type: 3}
@@ -31431,6 +31451,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 105785270}
     m_Modifications:
+    - target: {fileID: 3283592913607326422, guid: bb984d2cab8a42843a6488d125249a5f,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6709932508315088483, guid: bb984d2cab8a42843a6488d125249a5f,
         type: 3}
       propertyPath: m_Name
