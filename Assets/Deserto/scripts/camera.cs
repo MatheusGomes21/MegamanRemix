@@ -12,11 +12,13 @@ public class camera : MonoBehaviour
     public bool self = true;
 
     GameObject player;
+    Camera cam;
 
     // Start is called before the first frame update
     void Start()
     {
         player = GameObject.Find("Cowboy");
+        cam = gameObject.GetComponent<Camera>();
 
         if (self == false)
         {
@@ -41,11 +43,15 @@ public class camera : MonoBehaviour
                 {
                     if (transform.position.x > player.transform.position.x - 6.443217f && changed == false)
                     {
-                        MonoBehaviour.print("sim");
                         xPosit -= speed;
                     }
 
-                    if (transform.position.x <= player.transform.position.x - 6.443217f)
+                    if (cam.orthographicSize < 8)
+                    {
+                        cam.orthographicSize += 0.2f;
+                    }
+
+                    if (transform.position.x <= player.transform.position.x && gameObject && cam.orthographicSize >= 8)
                     {
                         changed = true;
                     }

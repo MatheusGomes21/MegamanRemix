@@ -39,7 +39,7 @@ public class elVince : MonoBehaviour
     {
         //set direction and mirror
         speed = Mathf.Abs(speed) * direction;
-        transform.localScale = new Vector3(Mathf.Abs(direction) * 1.2f, 1.2f, 1);
+        transform.localScale = new Vector3(Mathf.Abs(direction) * 1, 1, 1);
 
         animator.SetBool("Walking", true);
 
@@ -127,6 +127,9 @@ public class elVince : MonoBehaviour
         }
 
         gameObject.GetComponent<SpriteRenderer>().enabled = false;
+        gameObject.transform.GetChild(1).GetComponent<SpriteRenderer>().enabled = false;
+        gameObject.transform.GetChild(2).GetComponent<SpriteRenderer>().enabled = false;
+        gameObject.transform.GetChild(3).GetComponent<SpriteRenderer>().enabled = false;
         yield return new WaitForSeconds(4);
         gameObject.transform.GetChild(0).GetComponent<SpriteRenderer>().enabled = false;
         gameObject.transform.GetChild(0).GetComponent<Animator>().SetBool("Explosao", false);
