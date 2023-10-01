@@ -91,7 +91,7 @@ public class cacto : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (gameObject.tag != "Dead" | gameObject.tag != "Deaded")
+        if (gameObject.tag != "Dead" && gameObject.tag != "Deaded")
         {
             //patrol
             transform.position += new Vector3(speed, 0, 0) * Time.deltaTime;
