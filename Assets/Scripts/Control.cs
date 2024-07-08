@@ -110,7 +110,7 @@ public class Control : MonoBehaviour
     void FixedUpdate()
     {
         Reverser();
-        anima.SetFloat("Velocity", Mathf.Abs(xmov));
+
         //rdb.velocity = new vector2(xmov * 1.3f, rdb.velocity.y);
 
         rdb.AddForce(new Vector2(xmov * 20 / (rdb.velocity.magnitude + 1), 0));
@@ -119,7 +119,7 @@ public class Control : MonoBehaviour
         hit = Physics2D.Raycast(transform.position, Vector2.down);
         if (hit)
         {
-            anima.SetFloat("Height", hit.distance);
+
             JumpRoutine(hit);
         }
 

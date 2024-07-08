@@ -56,7 +56,10 @@ public class Mira : MonoBehaviour
             animator.SetBool(animacao, true);
             fxAnimator.SetBool("Pow", true);
 
-            enemy.tag = "Dead";
+            if (enemy != null)
+            {
+                enemy.tag = "Dead";
+            }
         }
 
         else
